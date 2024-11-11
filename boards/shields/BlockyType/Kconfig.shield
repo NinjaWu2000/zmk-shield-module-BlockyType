@@ -1,7 +1,5 @@
-# No whitespace after the comma or in your part name!
 config SHIELD_BLOCKYTYPE_LEFT
     def_bool $(shields_list_contains,BlockyType_left)
 
-# No whitespace after the comma or in your part name!
 config SHIELD_BLOCKYTYPE_RIGHT
     def_bool $(shields_list_contains,BlockyType_right)
