@@ -9,20 +9,24 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer { // Layer 0
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
+        default_layer {
+            // -----------------------------------------------------------------------------------------
+            // |   `  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+            // |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT  |
+            //                    | GUI | RSE | ENT |   | SPC | LWR  | ALT |
+            display-name = "Base";
             bindings = <
-                &kp 0    &kp q    &kp w    &kp e    &kp r    &kp t                          &kp z    &kp u    &kp i    &kp o    &kp p    &kp 0
-                &kp 0    &kp a    &kp s    &kp d    &kp f    &kp g                          &kp h    &kp j    &kp k    &kp l    &kp ö    &kp 0
-                &kp 0    &kp y    &kp x    &kp c    &kp v    &kp b                          &kp n    &kp m    &kp ,    &kp .    &kp ?    &kp 0
-                                                             &kp 8    &kp 2        &kp 1    &kp 3
+                &kp 0  &kp Q  &kp W  &kp E  &kp R  &kp T                  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp 0
+                &kp 0  &kp A  &kp S  &kp D  &kp F  &kp G                  &kp H  &kp J  &kp K  &kp L  &kp 0  &kp 0
+                &kp 0  &kp Z  &kp X  &kp C  &kp V  &kp B                  &kp N  &kp M  &kp 0  &kp 0  &kp 0  &kp 0
+                                            &kp 0  &kp 1  &kp 2    &kp 1  &kp 2  &kp 9
             >;
         };
+
     };
- }; 
+};
