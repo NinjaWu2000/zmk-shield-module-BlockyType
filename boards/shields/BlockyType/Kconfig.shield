@@ -1,5 +1,5 @@
 config SHIELD_BLOCKYTYPE_LEFT
-    def_bool $(shields_list_contains,BlockyType_left)
+    def_bool $(shields_list_contains,blockytype_left)
 
 config SHIELD_BLOCKYTYPE_RIGHT
-    def_bool $(shields_list_contains,BlockyType_right)
+    def_bool $(shields_list_contains,blockytype_right)

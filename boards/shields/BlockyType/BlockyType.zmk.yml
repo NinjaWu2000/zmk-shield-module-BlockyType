@@ -8,5 +8,5 @@ exposes: [i2c_oled]
 features:
   - keys
 siblings:
-  - BlockyType_left
-  - BlockyType_right
+  - blockytype_left
+  - blockytype_right

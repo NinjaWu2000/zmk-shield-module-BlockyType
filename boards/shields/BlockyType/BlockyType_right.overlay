@@ -1,4 +1,4 @@
-#include "BlockyType.dtsi"
+#include "blockytype.dtsi"
 
 &default_transform { 
     col-offset = <7>;
