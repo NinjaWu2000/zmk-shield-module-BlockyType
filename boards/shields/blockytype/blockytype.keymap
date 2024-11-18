@@ -14,13 +14,13 @@
     // combos {
     //     combo_layer_switch {
     //         timeout-ms = <50>;
-    //         bindings = <&to 2>;
+    //         bindings = <&none 2>;
     //         key-positions = <37 38>;
     //         layers = <0>;
     //     };
     //     combo_back_to_default {
     //         timeout-ms = <50>;
-    //         bindings = <&to 0>;
+    //         bindings = <&none 0>;
     //         key-positions = <28 39>;
     //         layers = <1 2 3>;
     //     };
@@ -31,13 +31,13 @@
         alt_mm: alt_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&none>, <&none>;
             mods = <(MOD_LALT | MOD_RALT)>;
         };
         shift_mm: shift_mod_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&none>, <&none>;
             mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
         };
         ht_tp: hold_tap_tap_preferred {
@@ -46,13 +46,13 @@
                 tapping-term-ms = <200>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
-                bindings = <&kp>, <&kp>;
+                bindings = <&none>, <&none>;
         };
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 3>;
+            bindings = <&none>, <&none 3>;
         };
     };
 
@@ -62,54 +62,54 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &mo 1  &kp Q          &kp W          &kp E           &kp R            &kp T                                      &kp Y  &kp U            &kp I               &kp O               &kp P               &none
+                &none   &none      &none          &none            &none             &none                                       &none  &none             &none               &none                &none                &none
                     
-                &mo 2  &ht_tp LGUI A  &ht_tp LALT S  &ht_tp LCRTL D  &ht_tp LSHIFT F  &kp G                                      &kp H  &ht_tp RSHIFT J  &ht_tp RCRTL K      &ht_tp RALT L       &ht_tp RGUI U_00F6  &none
+                &none   &none   &none   &none   &none   &none                                       &none   &none   &none        &none         &none    &none
                     
-                &mo 3  &kp Z          &kp X          &kp C           &kp V            &kp B                                      &kp N  &kp M            &kp COMMA           &kp PERIOD          &kp QMARK           &none
+                &none   &none      &none          &none            &none             &none                                       &none   &none             &none            &none           &none            &none
                 
-                                                                                      &alt_mm BSPC DEL  &lt 1 ESC     &kp ENTER  &kp SPACE 
+                                                                                      &none  &none      &none   &none  
             >;
         };
-        //Layer 1
-        symbol_layer {
-            display-name = "Symbol";
-            bindings = <
-                &none  &kp Q          &kp W          &kp E           &kp R            &kp T                     &kp Y  &kp U            &kp I               &kp O               &kp P          &none
+        // //Layer 1
+        // symbol_layer {
+        //     display-name = "Symbol";
+        //     bindings = <
+        //         &none  &none Q          &none W          &none E           &none R            &none T                     &none Y  &none U            &none I               &none O               &none P          &none
                 
-                &none  &ht_tp LGUI N1  &ht_tp LALT N2  &ht_tp LCRTL N3  &ht_tp LSHIFT N4  &kp N5                     &kp N6  &ht_tp RSHIFT N7  &ht_tp RCRTL N8      &ht_tp RALT N9       &ht_tp RGUI N0  &none
+        //         &none  &none LGUI N1  &none LALT N2  &none LCRTL N3  &none LSHIFT N4  &none N5                     &none N6  &none RSHIFT N7  &none RCRTL N8      &none RALT N9       &none RGUI N0  &none
                 
-                &none  &kp Z          &kp X          &kp C           &kp V            &kp B                     &kp N  &kp M            &kp COMMA           &kp PERIOD          &kp QMARK      &none
+        //         &none  &none Z          &none X          &none C           &none V            &none B                     &none N  &none M            &none COMMA           &none PERIOD          &none QMARK      &none
                 
-                                                                                      &none  &kp TAB     &to 2  &kp SPACE 
-            >;
-        };
-        //Layer 2
-        navigation_layer {
-            display-name = "Navigation";
-            bindings = <
-                &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &td0
+        //                                                                               &none  &none TAB     &none 2  &none SPACE 
+        //     >;
+        // };
+        // //Layer 2
+        // navigation_layer {
+        //     display-name = "Navigation";
+        //     bindings = <
+        //         &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
                 
-                &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+        //         &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
                 
-                &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
+        //         &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
                 
-                                                   &none  &none    &none  &none 
-            >;
-        };
-        //Layer 3
-        system_layer {
-            display-name = "System";
-            bindings = <
-                &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none        &none
+        //                                            &none  &none    &none  &none 
+        //     >;
+        // };
+        // //Layer 3
+        // system_layer {
+        //     display-name = "System";
+        //     bindings = <
+        //         &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none        &none
                 
-                &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &bootloader  &none
+        //         &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none  &none
                 
-                &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none        &none
+        //         &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none        &none
                 
-                                                   &none  &none    &none  &none 
-            >;
-        };
+        //                                            &none  &none    &none  &none 
+        //     >;
+        // };
 
     };
 };
