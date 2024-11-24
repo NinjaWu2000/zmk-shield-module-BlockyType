@@ -72,8 +72,8 @@
             >;
         };
         
-        symbol_layer {
-            display-name = "Symbol";
+        lower_layer {
+            display-name = "Lower";
             bindings = <
                 &mo0  &kp Q          &kp W          &kp E           &kp R            &kp T                                      &kp Y  &kp U            &kp I               &kp O               &kp P               &none
                     
@@ -81,7 +81,7 @@
                     
                 &none  &kp Z          &kp X          &kp C           &kp V            &kp B                                      &kp N  &kp M            &kp COMMA           &kp PERIOD          &kp QMARK           &none
                 
-                                                                                      &kp DEL  &kp ESC     &kp ENTER  &kp SPACE 
+                                                                                      &kp DEL  &kp ESC     &kp ENTER  &kp SPACE
             >;
         };
         // //Layer 2
