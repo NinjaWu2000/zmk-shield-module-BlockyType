@@ -72,16 +72,16 @@
             >;
         };
         
-        lower_layer {
-            display-name = "Lower";
+        symbol_layer {
+            display-name = "Symbol";
             bindings = <
-                &mo0  &kp Q          &kp W          &kp E           &kp R            &kp T                                      &kp Y  &kp U            &kp I               &kp O               &kp P               &none
+                &mo0  &none          &none          &none           &none            &none                                      &none  &none            &none               &none               &none               &none
                     
-                &none  &kp A  &kp S  &kp D  &kp F  &kp G                                      &kp H  &kp J  &kp K      &kp L       &kp K  &kp I
+                &none  &none  &noneS  &none  &none  &none                                      &none  &none  &none      &none       &none  &none
                     
-                &none  &kp Z          &kp X          &kp C           &kp V            &kp B                                      &kp N  &kp M            &kp COMMA           &kp PERIOD          &kp QMARK           &none
+                &none  &none          &none          &none           &none           &none                                      &none  &none            &none           &none          &none           &none
                 
-                                                                                      &kp DEL  &kp ESC     &kp ENTER  &kp SPACE
+                                                                                      &none  &none     &none  &none
             >;
         };
         // //Layer 2
