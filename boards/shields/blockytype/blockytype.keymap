@@ -77,7 +77,7 @@
             bindings = <
                 &none  &kp Q          &kp W          &kp E           &kp R            &kp T                     &kp Y  &kp U            &kp I               &kp O               &kp P          &none
                     
-                &none  &ht_tp LGUI N1  &ht_tp LALT N2  &ht_tp LCTRL N3  &ht_tp LSHIFT N4  &kp N5                     &kp N6  &kp N7  &kp N8      &kp N9       &kp N0  &none
+                &none  &ht_tp LGUI N1  &ht_tp LALT N2  &ht_tp LCTRL N3  &ht_tp LSHIFT N4  &kp N5                     &kp N6  &ht_tp RSHIFT N7  &ht_tp RCTRL N8  &ht_tp RALT N9  &ht_tp RGUI N0  &none
                     
                 &none  &kp Z          &kp X          &kp C           &kp V            &kp B                     &kp N  &kp M            &kp COMMA           &kp PERIOD          &kp QMARK      &none
                 
