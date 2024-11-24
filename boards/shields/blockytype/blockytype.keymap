@@ -77,7 +77,7 @@
             bindings = <
                 &mo0  &none          &none          &none           &none            &none                                      &none  &none            &none               &none               &none               &none
                     
-                &none  &none  &noneS  &none  &none  &none                                      &none  &none  &none      &none       &none  &none
+                &none  &none  &none  &none  &none  &none                                      &none  &none  &none      &none       &none  &none
                     
                 &none  &none          &none          &none           &none           &none                                      &none  &none            &none           &none          &none           &none
                 
