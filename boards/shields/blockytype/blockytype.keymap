@@ -50,9 +50,9 @@
         // };
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
+            #binding-cells = <1>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&to 3>;
+            bindings = <&none>, <&to>;
         };
     };
 
