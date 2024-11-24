@@ -58,7 +58,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        //Layer 0
+        
         default_layer {
             display-name = "Base";
             bindings = <
@@ -71,7 +71,7 @@
                                                                                       &kp DEL  &kp ESC     &kp ENTER  &kp SPACE 
             >;
         };
-        //Layer 1
+        
         symbol_layer {
             display-name = "Symbol";
             bindings = <
