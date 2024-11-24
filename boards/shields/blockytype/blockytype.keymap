@@ -11,20 +11,20 @@
 
 / {
 
-    // combos {
-    //     combo_layer_switch {
-    //         timeout-ms = <50>;
-    //         bindings = <&none 2>;
-    //         key-positions = <37 38>;
-    //         layers = <0>;
-    //     };
-    //     combo_back_to_default {
-    //         timeout-ms = <50>;
-    //         bindings = <&none 0>;
-    //         key-positions = <28 39>;
-    //         layers = <1 2 3>;
-    //     };
-    // };
+    combos {
+        combo_layer_switch {
+            timeout-ms = <50>;
+            bindings = <&none 2>;
+            key-positions = <37 38>;
+            layers = <0>;
+        };
+        combo_back_to_default {
+            timeout-ms = <50>;
+            bindings = <&none 0>;
+            key-positions = <28 39>;
+            layers = <1 2 3>;
+        };
+    };
 
 
     // behaviors {
