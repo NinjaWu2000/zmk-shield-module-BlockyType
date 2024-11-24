@@ -14,13 +14,13 @@
     combos {
         combo_layer_switch {
             timeout-ms = <50>;
-            bindings = <&none 2>;
+            bindings = <&to 2>;
             key-positions = <37 38>;
             layers = <0>;
         };
         combo_back_to_default {
             timeout-ms = <50>;
-            bindings = <&none 0>;
+            bindings = <&to 0>;
             key-positions = <28 39>;
             layers = <1 2 3>;
         };
@@ -31,13 +31,13 @@
     //     alt_mm: alt_mod_morph {
     //         compatible = "zmk,behavior-mod-morph";
     //         #binding-cells = <2>;
-    //         bindings = <&none>, <&none>;
+    //         bindings = <&kp>, <&kp>;
     //         mods = <(MOD_LALT | MOD_RALT)>;
     //     };
     //     shift_mm: shift_mod_morph {
     //         compatible = "zmk,behavior-mod-morph";
     //         #binding-cells = <2>;
-    //         bindings = <&none>, <&none>;
+    //         bindings = <&kp>, <&kp>;
     //         mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
     //     };
     //     ht_tp: hold_tap_tap_preferred {
@@ -46,13 +46,13 @@
     //             tapping-term-ms = <200>;
     //             quick-tap-ms = <0>;
     //             flavor = "tap-preferred";
-    //             bindings = <&none>, <&none>;
+    //             bindings = <&kp>, <&kp>;
     //     };
     //     td0: tap_dance_0 {
     //         compatible = "zmk,behavior-tap-dance";
     //         #binding-cells = <0>;
     //         tapping-term-ms = <200>;
-    //         bindings = <&none>, <&none 3>;
+    //         bindings = <&none>, <&to 3>;
     //     };
     // };
 
