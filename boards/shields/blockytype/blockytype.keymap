@@ -36,8 +36,8 @@
         // };
         shift_mm: shift_mod_morph {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp G>, <&kp A>;
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         ht_tp: hold_tap_tap_preferred {
