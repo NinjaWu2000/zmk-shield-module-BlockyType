@@ -34,12 +34,12 @@
         //     bindings = <&kp>, <&kp>;
         //     mods = <(MOD_LALT | MOD_RALT)>;
         // };
-        // shift_mm: shift_mod_morph {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <2>;
-        //     bindings = <&kp>, <&kp>;
-        //     mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
-        // };
+        shift_mm: shift_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+            mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+        };
         ht_tp: hold_tap_tap_preferred {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
