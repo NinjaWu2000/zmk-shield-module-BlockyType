@@ -99,13 +99,13 @@
         system_layer {
             display-name = "System";
             bindings = <
-                &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none        &none
+                &none  &none        &none  &none  &none  &none                  &none  &none  &none  &none  &none        &none
                 
-                &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &bootloader  &none
+                &none  &bootloader  &none  &none  &none  &none                  &none  &none  &none  &none  &bootloader  &none
                 
-                &none  &none  &none  &none  &none  &none                  &none  &none  &none  &none  &none        &none
+                &none  &none        &none  &none  &none  &none                  &none  &none  &none  &none  &none        &none
                 
-                                                   &none  &none    &none  &none 
+                                                         &none  &none    &none  &none 
             >;
         };
 
