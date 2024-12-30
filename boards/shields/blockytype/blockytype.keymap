@@ -99,7 +99,7 @@
         system_layer {
             display-name = "System";
             bindings = <
-                &none  &none        &none  &none  &none  &none                  &none  &none  &none  &none  &none        &none
+                &none  &none        &none  &none  &none  &none                  &bt BT_SEL 0  &bt BT_PRV  &bt BT_NX &none  &none        &none
                 
                 &none  &bootloader  &none  &none  &none  &none                  &none  &none  &none  &none  &bootloader  &none
                 
