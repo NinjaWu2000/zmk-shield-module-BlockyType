@@ -20,5 +20,7 @@
 include:
   - board: nice_nano_v2
     shield: blockytype_left
+    artifact-name: blockytype_left
   - board: nice_nano_v2
     shield: blockytype_right nice_view
+    artifact-name: blockytype_right
