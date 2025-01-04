@@ -5,7 +5,7 @@ if SHIELD_BLOCKYTYPE_LEFT
         default "BlockyType"
 
     config ZMK_SPLIT_ROLE_CENTRAL
-        default n
+        default y
 
 endif
 
