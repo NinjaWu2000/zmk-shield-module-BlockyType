@@ -10,8 +10,8 @@ if SHIELD_BLOCKYTYPE_RIGHT
 endif
 
 if SHIELD_BLOCKYTYPE_LEFT
-    config ZMK_SPLIT_ROLE_PERIPHERAL
-        default y
+    config ZMK_SPLIT_ROLE_CENTRAL
+        default n
 
 
 endif
