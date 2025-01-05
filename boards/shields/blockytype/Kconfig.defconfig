@@ -1,4 +1,4 @@
-if SHIELD_BLOCKYTYPE_LEFT
+if SHIELD_BLOCKYTYPE_RIGHT
 
     # Name must be less than 16 characters long!
     config ZMK_KEYBOARD_NAME
