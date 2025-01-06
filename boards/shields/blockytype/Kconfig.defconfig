@@ -19,6 +19,6 @@ endif
 if SHIELD_BLOCKYTYPE_LEFT || SHIELD_BLOCKYTYPE_RIGHT
 
     config ZMK_SPLIT
-        default y
+        default n
 
 endif
