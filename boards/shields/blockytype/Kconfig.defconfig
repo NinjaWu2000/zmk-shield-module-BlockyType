@@ -1,4 +1,4 @@
-if SHIELD_BLOCKYTYPE_RIGHT
+if SHIELD_BLOCKYTYPE_LEFT
 
     # Name must be less than 16 characters long!
     config ZMK_KEYBOARD_NAME
@@ -6,13 +6,6 @@ if SHIELD_BLOCKYTYPE_RIGHT
 
     config ZMK_SPLIT_ROLE_CENTRAL
         default y
-
-endif
-
-if SHIELD_BLOCKYTYPE_LEFT
-    config ZMK_SPLIT_ROLE_CENTRAL
-        default n
-
 
 endif
 
