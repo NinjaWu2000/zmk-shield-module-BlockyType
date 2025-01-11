@@ -4,7 +4,6 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
-        zmk,backlight = &backlight;
     };
 
 
@@ -38,14 +37,6 @@
             ;
 
     };
-
-
-    backlight: pwmleds {
-        compatible = "pwm-leds";
-        pwm_led_0 {
-            pwms = <&pwm0 0 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
-        };
-    };
 };
 
 //	sck= SCL
@@ -64,17 +55,6 @@
             low-power-enable;
         };
     };
-    pwm0_default: pwm0_default {
-        group1 {
-            psels = <NRF_PSEL(PWM_OUT0, 0, 8)>;     //P0
-        };
-    };
-    pwm0_sleep: pwm0_sleep {
-        group1 {
-            psels = <NRF_PSEL(PWM_OUT0, 0, 8)>;     //P0
-            low-power-enable;
-        };
-    };
 };
 
 nice_view_spi: &spi0 {
@@ -87,11 +67,4 @@ nice_view_spi: &spi0 {
 
 &pro_micro_i2c {
     status = "disabled";
-};
-
-&pwm0 {
-    status = "okay";
-    pinctrl-0 = <&pwm0_default>;
-    pinctrl-1 = <&pwm0_sleep>;
-    pinctrl-names = "default", "sleep";
 };

@@ -15,13 +15,3 @@ if SHIELD_BLOCKYTYPE_LEFT || SHIELD_BLOCKYTYPE_RIGHT
         default y
 
 endif
-
-if ZMK_BACKLIGHT
-
-config PWM
-    default y
-
-config LED_PWM
-    default y
-
-endif 
