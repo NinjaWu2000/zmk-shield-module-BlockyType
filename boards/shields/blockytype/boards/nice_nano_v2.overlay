@@ -1,10 +1,5 @@
 #include <dt-bindings/led/led.h>
 
-/ {
-    chosen {
-        zmk,underglow = &led_strip;
-    };
-};
 
 
 //	sck= SCL
@@ -73,4 +68,10 @@ nice_view_spi: &spi0 {
 
 &pro_micro_i2c {
     status = "disabled";
+};
+
+/ {
+    chosen {
+        zmk,underglow = &led_strip;
+    };
 };
