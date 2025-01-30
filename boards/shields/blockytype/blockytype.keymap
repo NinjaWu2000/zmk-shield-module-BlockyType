@@ -96,11 +96,11 @@
             bindings = <
                 &to 0  &none        &none  &none  &none  &none                  &bt BT_SEL 0  &bt BT_PRV  &bt BT_NXT   &none  &none        &none
                 
-                &none  &bootloader  &none  &none  &none  &none                  &none         &none       &none       &none  &bootloader  &none
+                &none  &bootloader  &none  &none  &none  &none                  &rgb_ug RGB_TOG  &rgb_ug  RGB_BRI  &rgb_ug RGB_BRD  &none   &bootloader  &none
                           
                 &none  &none        &none  &none  &none  &none                  &none         &none       &none       &none  &none        &none
                 
-                                                         &none  &none    &rgb_ug RGB_TOG  &none 
+                                                         &none  &none    &none  &none 
             >;
         };
 
