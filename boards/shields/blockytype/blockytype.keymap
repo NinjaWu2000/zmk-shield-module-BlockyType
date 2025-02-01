@@ -33,7 +33,7 @@
 
 
     behaviors {
-        #include "behaviors/alt_modifiers.keymap"
+        #include "behaviors/alt_modifiers.keymap";
         a_MOVE_LEFT_SCRL_LEFT:{
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
