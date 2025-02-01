@@ -1,4 +1,4 @@
-alt_BSPC_DEL: alt_BSPC_DEL_mod_morph {
+alt_BSPC_DEL: {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp BSPC>, <&kp DEL>;
