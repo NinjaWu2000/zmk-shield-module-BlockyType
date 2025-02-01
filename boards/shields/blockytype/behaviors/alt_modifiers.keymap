@@ -1,7 +1,7 @@
 /* 
     a[for alt]_key[default]_key[in combination with modifer]
 */
-a_BSPC_DEL:{
+a_BSPC_DEL: a {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp BSPC>, <&kp DEL>;
