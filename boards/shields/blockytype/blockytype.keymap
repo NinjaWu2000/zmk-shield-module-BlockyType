@@ -37,7 +37,7 @@
         a_MOVE_LEFT_SCRL_LEFT:{
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_LEFT>, <&msc SCRL_LEFT>;
+            bindings = <&mmv MOVE_LEFT>, <&kp A>;
             mods = <(MOD_LALT | MOD_RALT)>;
         };
         // a_MOVE_DOWN_SCRL_DOWN:{
