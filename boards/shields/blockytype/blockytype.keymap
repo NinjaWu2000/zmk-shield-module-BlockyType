@@ -34,12 +34,12 @@
 
     behaviors {
         #include "behaviors/alt_modifiers.keymap";
-        a_MOVE_LEFT_SCRL_LEFT:{
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp A>, <&kp A>;
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
+        // a_MOVE_LEFT_SCRL_LEFT:{
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&kp A>, <&kp A>;
+        //     mods = <(MOD_LALT | MOD_RALT)>;
+        // };
         // a_MOVE_DOWN_SCRL_DOWN:{
         //     compatible = "zmk,behavior-mod-morph";
         //     #binding-cells = <0>;
