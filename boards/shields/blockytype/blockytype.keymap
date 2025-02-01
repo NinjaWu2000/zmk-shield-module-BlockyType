@@ -108,7 +108,7 @@
             bindings = <
                 &to 0  &none  &none     &none     &none     &none                  &none           &none           &none         &none            &none  &td0
                 
-                &none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none                  &a_MOVE_LEFT_SCRL_LEFT  &a_MOVE_DOWN_SCRL_DOWN  &a_MOVE_UP_SCRL_UP  &a_MOVE_RIGHT_SCRL_RIGHT  &none  &none
+                &none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none                  &a_MOVE_LEFT_SCRL_LEFT  &none  &none  &none  &none  &none
                 
                 &none  &none  &none     &none     &none     &none                  &none           &none           &none         &none            &none  &none
                 
