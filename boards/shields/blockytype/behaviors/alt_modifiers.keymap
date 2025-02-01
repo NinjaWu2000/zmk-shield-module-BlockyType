@@ -1,6 +1,16 @@
-alt_BSPC_DEL: alt_1 {
+/* 
+    a[for alt]_key[default]_key[in combination with modifer]: alt_n[number in the file]
+*/
+
+a_BSPC_DEL: alt_1 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LALT | MOD_RALT)>;
-}; 
+};
+a_MOVE_LEFT_SCRL_LEFT: alt_2 {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp A>, <&kp A>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
