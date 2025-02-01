@@ -40,24 +40,24 @@
             bindings = <&mmv MOVE_LEFT>, <&msc SCRL_LEFT>;
             mods = <(MOD_LALT | MOD_RALT)>;
         };
-        a_MOVE_DOWN_SCRL_DOWN:{
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_DOWN>, <&msc SCRL_DOWN>;
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
-        a_MOVE_UP_SCRL_UP:{
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
-        a_MOVE_RIGHT_SCRL_RIGHT:{
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
-            mods = <(MOD_LALT | MOD_RALT)>;
-        };
+        // a_MOVE_DOWN_SCRL_DOWN:{
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&mmv MOVE_DOWN>, <&msc SCRL_DOWN>;
+        //     mods = <(MOD_LALT | MOD_RALT)>;
+        // };
+        // a_MOVE_UP_SCRL_UP:{
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
+        //     mods = <(MOD_LALT | MOD_RALT)>;
+        // };
+        // a_MOVE_RIGHT_SCRL_RIGHT:{
+        //     compatible = "zmk,behavior-mod-morph";
+        //     #binding-cells = <0>;
+        //     bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
+        //     mods = <(MOD_LALT | MOD_RALT)>;
+        // };
         ht_tp: hold_tap_tap_preferred {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
