@@ -1,5 +1,4 @@
 #include <behaviors.dtsi>
-#include "zmk-helpers/helper.h"i,,
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
@@ -58,11 +57,11 @@
         default_layer { 
             display-name = "Base";
             bindings = <
-                &mo 1  &kp Q          &kp W          &kp E           &kp R            &kp T                                      &kp Y  &kp U            &kp I               &kp O               &kp P               &mo 1
+                &mo 1  &kp Q          &kp W          &kp F           &kp P            &kp B                                      &kp J  &kp L            &kp U               &kp Y               &kp SEMICOLON       &mo 1
                     
-                &mo 2  &ht_tp LGUI A  &ht_tp LALT S  &ht_tp LCTRL D  &ht_tp LSHIFT F  &kp G                                      &kp H  &ht_tp RSHIFT J  &ht_tp RCTRL K      &ht_tp RALT L       &ht_tp RGUI K       &mo 2
+                &mo 2  &ht_tp LGUI A  &ht_tp LALT R  &ht_tp LCTRL S  &ht_tp LSHIFT T  &kp G                                      &kp M  &ht_tp RSHIFT N  &ht_tp RCTRL E      &ht_tp RALT I       &ht_tp RGUI O       &mo 2
                     
-                &mo 3  &kp Z          &kp X          &kp C           &kp V            &kp B                                      &kp N  &kp M            &kp COMMA           &kp PERIOD          &kp QMARK           &mo 3
+                &mo 3  &kp Z          &kp X          &kp C           &kp D            &kp V                                      &kp K  &kp H            &kp COMMA           &kp PERIOD          &kp SLASH           &mo 3
                 
                                                                                       &a_BSPC_DEL  &lt 1 ESC     &kp ENTER  &kp SPACE 
             >;
@@ -71,13 +70,13 @@
         symbol_layer { 
             display-name = "Symbol";
             bindings = <
-                &to 0  &kp Q           &kp W           &kp E            &kp R             &kp T                      &kp Y   &kp U             &kp I            &kp O           &kp P           &none
+                &to 0  &kp Q              &kp W              &kp E               &kp R                &kp T                         &kp Y      &kp U                &kp I               &kp O              &kp P             &none
                     
-                &none  &ht_tp LGUI N1  &ht_tp LALT N2  &ht_tp LCTRL N3  &ht_tp LSHIFT N4  &kp N5                     &kp N6  &ht_tp RSHIFT N7  &ht_tp RCTRL N8  &ht_tp RALT N9  &ht_tp RGUI N0  &none
+                &none  &ht_tp LGUI KP_N1  &ht_tp LALT KP_N2  &ht_tp LCTRL KP_N3  &ht_tp LSHIFT KP_N4  &kp KP_N5                     &kp KP_N6  &ht_tp RSHIFT KP_N7  &ht_tp RCTRL KP_N8  &ht_tp RALT KP_N9  &ht_tp RGUI KP_N0  &none
                     
-                &none  &kp Z           &kp X           &kp C            &kp V             &kp B                      &kp N   &kp M             &kp COMMA        &kp PERIOD      &kp QMARK       &none
+                &none  &kp Z              &kp X              &kp C               &kp V                &kp B                         &kp N      &kp M                &kp COMMA           &kp PERIOD         &kp QMARK         &none
                 
-                                                                                          &none  &kp TAB      &to 2  &kp SPACE 
+                                                                                                      &none  &kp TAB         &to 2  &kp SPACE 
             >;
         };
         //Layer 2
