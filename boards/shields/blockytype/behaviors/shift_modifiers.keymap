@@ -6,17 +6,17 @@ s_LPAR_RPAR: shift_1 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp LPAR>, <&kp RPAR>;
-    mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
 };
 s_LBKT_RBKT: shift_2 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp LBKT>, <&kp RBKT>;
-    mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
 };
 s_LBRC_RBRC: shift_3 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp LBRC>, <&kp RBRC>;
-    mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
 };
