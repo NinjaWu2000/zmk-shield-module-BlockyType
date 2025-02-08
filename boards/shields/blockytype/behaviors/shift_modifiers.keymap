@@ -2,19 +2,19 @@
     s[for shift]_key[default]_key[in combination with modifer]: shift_n[number in the file]
 */
 #include <dt-bindings/zmk/keys.h>
-a_LPAR_RPAR: shift_1 {
+s_LPAR_RPAR: shift_1 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp LPAR>, <&kp RPAR>;
     mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
 };
-a_LBKT_RBKT: shift_2 {
+s_LBKT_RBKT: shift_2 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp LBKT>, <&kp RBKT>;
     mods = <(MOD_LSHIFT | MOD_RSHIFT)>;
 };
-a_LBRC_RBRC: shift_3 {
+s_LBRC_RBRC: shift_3 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp LBRC>, <&kp RBRC>;
