@@ -10,13 +10,13 @@ s_DE_EXCL_DE_QMARK: s_DE_EXCL_DE_QMARK {
     bindings = <&kp DE_EXCL>, <&kp DE_QMARK>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
-// /* $  ¦  € */
-// s_DE_DOLLAR_DE_EURO: s_DE_DOLLAR_DE_EURO {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_DOLLAR>, <&kp DE_EURO>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
+/* $  ¦  € */
+s_DE_DOLLAR_DE_EURO: s_DE_DOLLAR_DE_EURO {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_DOLLAR>, <&kp DE_EURO>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
 // /* *  ¦  < */
 // s_DE_STAR_DE_LT: s_DE_STAR_DE_LT {
 //     compatible = "zmk,behavior-mod-morph";
