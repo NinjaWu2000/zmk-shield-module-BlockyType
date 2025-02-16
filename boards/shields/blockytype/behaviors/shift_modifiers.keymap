@@ -94,24 +94,3 @@ s_DE_HASH_DE_DEG: s_DE_HASH_DE_DEG {
     bindings = <&kp DE_HASH>, <&kp DE_DEG>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
-/* /  ¦  paste */
-s_DE_FSLH_K_PASTE: s_DE_FSLH_K_PASTE {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp DE_FSLH>, <&kp K_PASTE>;
-    mods = <(MOD_LSFT | MOD_RSFT)>;
-};
-/* \  ¦  copy */
-s_DE_BSLH_K_COPY: s_DE_BSLH_K_COPY {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp DE_BSLH>, <&kp K_COPY>;
-    mods = <(MOD_LSFT | MOD_RSFT)>;
-};
-/* |  ¦  cut */
-s_DE_PIPE_K_CUT: s_DE_PIPE_K_CUT {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp DE_PIPE>, <&kp K_CUT>;
-    mods = <(MOD_LSFT | MOD_RSFT)>;
-};
