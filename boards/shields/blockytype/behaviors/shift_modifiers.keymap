@@ -45,13 +45,13 @@ s_DE_LBRC_DE_RBRC: s_DE_LBRC_DE_RBRC {
     bindings = <&kp DE_LBRC>, <&kp DE_RBRC>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
-// /* (  ¦  ) */
-// s_DE_LPAR_DE_RAPR: s_DE_LPAR_DE_RAPR {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_LPAR>, <&kp DE_RAPR>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
+/* (  ¦  ) */
+s_DE_LPAR_DE_RAPR: s_DE_LPAR_DE_RAPR {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_LPAR>, <&kp DE_RAPR>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
 // /* [  ¦  ] */
 // s_DE_LBKT_DE_RBKT: s_DE_LBKT_DE_RBKT {
 //     compatible = "zmk,behavior-mod-morph";
