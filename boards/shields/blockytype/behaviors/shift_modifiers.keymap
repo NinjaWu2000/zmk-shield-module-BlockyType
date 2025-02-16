@@ -3,6 +3,7 @@
     s[for shift]_key[default]_key[in combination with modifer]: s[for shift]_key[default]_key[in combination with modifer]
 */
 #include <dt-bindings/zmk/keys.h>
+#include <locale/keys_de.h>
 
 /* !  ¦  ? */
 s_DE_EXCL_DE_QMARK: s_DE_EXCL_DE_QMARK {
