@@ -1,22 +1,118 @@
 /* 
-    s[for shift]_key[default]_key[in combination with modifer]: shift_n[number in the file]
+    keyoutput[default]  ¦  keyoutput[with modifer]
+    s[for shift]_key[default]_key[in combination with modifer]: s[for shift]_key[default]_key[in combination with modifer]
 */
 #include <dt-bindings/zmk/keys.h>
-s_LPAR_RPAR: shift_1 {
+
+/* !  ¦  ? */
+s_DE_EXCL_DE_QMARK: s_DE_EXCL_DE_QMARK {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp LPAR>, <&kp RPAR>;
+    bindings = <&kp DE_EXCL>, <&kp DE_QMARK>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
-s_LBKT_RBKT: shift_2 {
+/* $  ¦  € */
+s_DE_DOLLAR_DE_EURO: s_DE_DOLLAR_DE_EURO {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp LBKT>, <&kp RBKT>;
+    bindings = <&kp DE_DOLLAR>, <&kp DE_EURO>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
-s_LBRC_RBRC: shift_3 {
+/* *  ¦  < */
+s_DE_STAR_DE_LT: s_DE_STAR_DE_LT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp LBRC>, <&kp RBRC>;
+    bindings = <&kp DE_STAR>, <&kp DE_LT>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* +  ¦  > */
+s_DE_PLUS_DE_GT: s_DE_PLUS_DE_GT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_PLUS>, <&kp DE_GT>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* "  ¦  ' */
+s_DE_DQT_DE_SQT: s_DE_DQT_DE_SQT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_DQT>, <&kp DE_SQT>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* {  ¦  } */
+s_DE_LBRC_DE_RBRC: s_DE_LBRC_DE_RBRC {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_LBRC>, <&kp DE_RBRC>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* (  ¦  ) */
+s_DE_LPAR_DE_RAPR: s_DE_LPAR_DE_RAPR {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_LPAR>, <&kp DE_RAPR>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* [  ¦  ] */
+s_DE_LBKT_DE_RBKT: s_DE_LBKT_DE_RBKT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_LBKT>, <&kp DE_RBKT>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* =  ¦  ~ */
+s_DE_EQUAL_DE_TILDE: s_DE_EQUAL_DE_TILDE {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_EQUAL>, <&kp DE_TILDE>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* ´  ¦  ` */
+s_DE_ACUTE_DE_GRAVE: s_DE_ACUTE_DE_GRAVE {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_ACUTE>, <&kp DE_GRAVE>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* @  ¦  § */
+s_DE_AT_DE_SECTION: s_DE_AT_DE_SECTION {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_AT>, <&kp DE_SECTION>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* &  ¦  ^ */
+s_DE_AMPS_DE_CARET: s_DE_AMPS_DE_CARET {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_AMPS>, <&kp DE_CARET>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* #  ¦  ° */
+s_DE_HASH_DE_DEG: s_DE_HASH_DE_DEG {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_HASH>, <&kp DE_DEG>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* /  ¦  paste */
+s_DE_FSLH_K_PASTE: s_DE_FSLH_K_PASTE {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_FSLH>, <&kp K_PASTE>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* \  ¦  copy */
+s_DE_BSLH_K_COPY: s_DE_BSLH_K_COPY {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_BSLH>, <&kp K_COPY>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* |  ¦  cut */
+s_DE_PIPE_K_CUT: s_DE_PIPE_K_CUT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_PIPE>, <&kp K_CUT>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
