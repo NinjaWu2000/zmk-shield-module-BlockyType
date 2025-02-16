@@ -72,7 +72,7 @@
         symbol_layer { 
             display-name = "Symbol";
             bindings = <
-                &to 0  &kp Q              &kp W              &kp E               &kp R                &kp T                         &s_LPAR_RPAR  &s_LBKT_RBKT         &s_LBRC_RBRC        &kp O              &kp P             &none
+                &to 0  &kp Q              &kp W              &kp E               &kp R                &kp T                         &none  &none         &none        &kp O              &kp P             &none
                     
                 &none  &ht_tp LGUI KP_N1  &ht_tp LALT KP_N2  &ht_tp LCTRL KP_N3  &ht_tp LSHIFT KP_N4  &kp KP_N5                     &kp KP_N6     &ht_tp RSHIFT KP_N7  &ht_tp RCTRL KP_N8  &ht_tp RALT KP_N9  &ht_tp RGUI KP_N0  &none
                     
