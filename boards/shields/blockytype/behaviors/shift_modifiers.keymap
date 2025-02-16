@@ -46,72 +46,72 @@ s_DE_LBRC_DE_RBRC: s_DE_LBRC_DE_RBRC {
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
 /* (  ¦  ) */
-s_DE_LPAR_DE_RAPR: s_DE_LPAR_DE_RAPR {
+s_DE_LPAR_DE_RPAR: s_DE_LPAR_DE_RPAR {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp DE_LPAR>, <&kp DE_RAPR>;
+    bindings = <&kp DE_LPAR>, <&kp DE_RPAR>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
-// /* [  ¦  ] */
-// s_DE_LBKT_DE_RBKT: s_DE_LBKT_DE_RBKT {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_LBKT>, <&kp DE_RBKT>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
-// /* =  ¦  ~ */
-// s_DE_EQUAL_DE_TILDE: s_DE_EQUAL_DE_TILDE {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_EQUAL>, <&kp DE_TILDE>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
-// /* ´  ¦  ` */
-// s_DE_ACUTE_DE_GRAVE: s_DE_ACUTE_DE_GRAVE {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_ACUTE>, <&kp DE_GRAVE>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
-// /* @  ¦  § */
-// s_DE_AT_DE_SECTION: s_DE_AT_DE_SECTION {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_AT>, <&kp DE_SECTION>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
-// /* &  ¦  ^ */
-// s_DE_AMPS_DE_CARET: s_DE_AMPS_DE_CARET {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_AMPS>, <&kp DE_CARET>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
-// /* #  ¦  ° */
-// s_DE_HASH_DE_DEG: s_DE_HASH_DE_DEG {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_HASH>, <&kp DE_DEG>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
-// /* /  ¦  paste */
-// s_DE_FSLH_K_PASTE: s_DE_FSLH_K_PASTE {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_FSLH>, <&kp K_PASTE>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
-// /* \  ¦  copy */
-// s_DE_BSLH_K_COPY: s_DE_BSLH_K_COPY {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_BSLH>, <&kp K_COPY>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
-// /* |  ¦  cut */
-// s_DE_PIPE_K_CUT: s_DE_PIPE_K_CUT {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp DE_PIPE>, <&kp K_CUT>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
+/* [  ¦  ] */
+s_DE_LBKT_DE_RBKT: s_DE_LBKT_DE_RBKT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_LBKT>, <&kp DE_RBKT>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* =  ¦  ~ */
+s_DE_EQUAL_DE_TILDE: s_DE_EQUAL_DE_TILDE {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_EQUAL>, <&kp DE_TILDE>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* ´  ¦  ` */
+s_DE_ACUTE_DE_GRAVE: s_DE_ACUTE_DE_GRAVE {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_ACUTE>, <&kp DE_GRAVE>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* @  ¦  § */
+s_DE_AT_DE_SECTION: s_DE_AT_DE_SECTION {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_AT>, <&kp DE_SECTION>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* &  ¦  ^ */
+s_DE_AMPS_DE_CARET: s_DE_AMPS_DE_CARET {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_AMPS>, <&kp DE_CARET>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* #  ¦  ° */
+s_DE_HASH_DE_DEG: s_DE_HASH_DE_DEG {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_HASH>, <&kp DE_DEG>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* /  ¦  paste */
+s_DE_FSLH_K_PASTE: s_DE_FSLH_K_PASTE {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_FSLH>, <&kp K_PASTE>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* \  ¦  copy */
+s_DE_BSLH_K_COPY: s_DE_BSLH_K_COPY {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_BSLH>, <&kp K_COPY>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* |  ¦  cut */
+s_DE_PIPE_K_CUT: s_DE_PIPE_K_CUT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_PIPE>, <&kp K_CUT>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
