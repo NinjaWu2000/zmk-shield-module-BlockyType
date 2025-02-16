@@ -94,3 +94,31 @@ s_DE_HASH_DE_DEG: s_DE_HASH_DE_DEG {
     bindings = <&kp DE_HASH>, <&kp DE_DEG>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
+/* 7  ¦  ⬅ */
+s_KP_N7_LEFT_ARROW: s_KP_N7_LEFT_ARROW {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp KP_N7>, <&kp LEFT_ARROW>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* 8  ¦  ⬇ */
+s_KP_N8_DOWN_ARROW: s_KP_N8_DOWN_ARROW {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp KP_N8>, <&kp DOWN_ARROW>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* 9  ¦  ⬆ */
+s_KP_N9_UP_ARROW: s_KP_N9_UP_ARROW {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp KP_N9>, <&kp UP_ARROW>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* 0  ¦  ⮕ */
+s_KP_N0_RIGHT_ARROW: s_KP_N0_RIGHT_ARROW {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp KP_N0>, <&kp RIGHT_ARROW>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
