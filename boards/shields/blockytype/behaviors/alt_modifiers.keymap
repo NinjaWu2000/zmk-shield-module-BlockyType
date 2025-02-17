@@ -1,34 +1,54 @@
 /* 
-    a[for alt]_key[default]_key[in combination with modifer]: alt_n[number in the file]
+    keyoutput[default]  ¦  keyoutput[with modifer]
+    a[for alt]_key[default]_key[in combination with modifer]: a[for alt]_key[default]_key[in combination with modifer]
 */
 
-a_BSPC_DEL: alt_1 {
+/* BSPC  ¦  DEL */
+a_BSPC_DEL: a_BSPC_DEL {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp BSPC>, <&kp DEL>;
     mods = <(MOD_LALT | MOD_RALT)>;
 };
-a_MOVE_LEFT_SCRL_LEFT: alt_2 {
+/* u  ¦  ü */
+a_DE_U_DE_U_UMLAUT: a_DE_U_DE_U_UMLAUT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp A>, <&kp A>;
+    bindings = <&kp DE_U>, <&kp DE_U_UMLAUT>;
     mods = <(MOD_LALT | MOD_RALT)>;
 };
-a_MOVE_DOWN_SCRL_DOWN: alt_3 {
+/* A  ¦  Ä */
+a_DE_A_DE_A_UMLAUT: a_DE_A_DE_A_UMLAUT {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&mmv MOVE_DOWN>, <&msc SCRL_DOWN>;
+    bindings = <&kp DE_A>, <&kp DE_A_UMLAUT>;
     mods = <(MOD_LALT | MOD_RALT)>;
 };
-a_MOVE_UP_SCRL_UP: alt_4 {
-    compatible = "zmk,behavior-mod-morph"; 
-    #binding-cells = <0>;
-    bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
-    mods = <(MOD_LALT | MOD_RALT)>;
-};
-a_MOVE_RIGHT_SCRL_RIGHT: alt_5 {
+/* S  ¦  ß */
+a_DE_S_DE_SHARP_S: a_DE_S_DE_SHARP_S {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
+    bindings = <&kp DE_S>, <&kp DE_SHARP_S>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
+/* O  ¦  Ö */
+a_DE_O_DE_O_UMLAUT: a_DE_O_DE_O_UMLAUT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_O>, <&kp DE_O_UMLAUT>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
+/* 2  ¦  ² */
+a_KP_N2_DE_SUPER2: a_KP_N2_DE_SUPER2 {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp KP_N2>, <&kp DE_SUPER2>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
+/* 3  ¦  ³ */
+a_KP_N3_DE_SUPER3: a_KP_N3_DE_SUPER3 {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp KP_N3>, <&kp DE_SUPER3>;
     mods = <(MOD_LALT | MOD_RALT)>;
 };
