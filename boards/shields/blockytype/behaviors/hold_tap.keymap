@@ -6,8 +6,8 @@
 /* A  ¦  Ä */
 ht_tp_a_DE_A_DE_A_UMLAUT: ht_tp_a_DE_A_DE_A_UMLAUT {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    #binding-cells = <1>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&a_DE_A_DE_A_UMLAUT>;
@@ -15,8 +15,8 @@ ht_tp_a_DE_A_DE_A_UMLAUT: ht_tp_a_DE_A_DE_A_UMLAUT {
 /* S  ¦  ß */
 ht_tp_a_DE_S_DE_SHARP_S: ht_tp_a_DE_S_DE_SHARP_S {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    #binding-cells = <1>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&a_DE_S_DE_SHARP_S>;
@@ -24,26 +24,26 @@ ht_tp_a_DE_S_DE_SHARP_S: ht_tp_a_DE_S_DE_SHARP_S {
 /* O  ¦  Ö */
 ht_tp_a_DE_O_DE_O_UMLAUT: ht_tp_a_DE_O_DE_O_UMLAUT {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    #binding-cells = <1>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&a_DE_O_DE_O_UMLAUT>;
 };
-/* 2  ¦  ² */
-ht_tp_a_KP_N2_DE_SUPER2: ht_tp_a_KP_N2_DE_SUPER2 {
+/* 1  ¦  ² */
+ht_tp_a_KP_N1_DE_SUPER1: ht_tp_a_KP_N1_DE_SUPER1 {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    #binding-cells = <1>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
-    bindings = <&kp>, <&a_KP_N2_DE_SUPER2>;
+    bindings = <&kp>, <&a_KP_N1_DE_SUPER1>;
 };
 /* 3  ¦  ³ */
 ht_tp_a_KP_N3_DE_SUPER3: ht_tp_a_KP_N3_DE_SUPER3 {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    #binding-cells = <1>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&a_KP_N3_DE_SUPER3>;
@@ -51,8 +51,8 @@ ht_tp_a_KP_N3_DE_SUPER3: ht_tp_a_KP_N3_DE_SUPER3 {
 /* 7  ¦  ⬅ */
 ht_tp_s_KP_N7_LEFT_ARROW: ht_tp_s_KP_N7_LEFT_ARROW {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    #binding-cells = <1>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&s_KP_N7_LEFT_ARROW>;
@@ -60,8 +60,8 @@ ht_tp_s_KP_N7_LEFT_ARROW: ht_tp_s_KP_N7_LEFT_ARROW {
 /* 8  ¦  ⬇ */
 ht_tp_s_KP_N8_DOWN_ARROW: ht_tp_s_KP_N8_DOWN_ARROW {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    #binding-cells = <1>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&s_KP_N8_DOWN_ARROW>;
@@ -69,8 +69,8 @@ ht_tp_s_KP_N8_DOWN_ARROW: ht_tp_s_KP_N8_DOWN_ARROW {
 /* 9  ¦  ⬆ */
 ht_tp_s_KP_N9_UP_ARROW: ht_tp_s_KP_N9_UP_ARROW {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    #binding-cells = <1>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&s_KP_N9_UP_ARROW>;
@@ -78,8 +78,8 @@ ht_tp_s_KP_N9_UP_ARROW: ht_tp_s_KP_N9_UP_ARROW {
 /* 0  ¦  ⮕ */
 ht_tp_s_KP_N0_RIGHT_ARROW: ht_tp_s_KP_N0_RIGHT_ARROW {
     compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    #binding-cells = <1>;
+    tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&s_KP_N0_RIGHT_ARROW>;
