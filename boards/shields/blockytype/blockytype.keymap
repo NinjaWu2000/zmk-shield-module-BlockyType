@@ -85,20 +85,20 @@
         navigation_layer {
             display-name = "Navigation";
             bindings = <
-                &to 0  &none  &none     &none     &none     &none               &none                   &none                   &none               &none                     &td0  &none
+                &to 0  &none  &none     &none     &none     &none               &none                   &kp HOME                   &kp PAGE_DOWN               &kp PAGE_UP    &kp END  &none
                 
-                &none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none               &a_MOVE_LEFT_SCRL_LEFT  &a_MOVE_DOWN_SCRL_DOWN  &a_MOVE_UP_SCRL_UP  &a_MOVE_RIGHT_SCRL_RIGHT  &none  &none
+                &none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none               &none  &none  &none  &none  &none  &none
                 
                 &none  &none  &none     &none     &none     &none               &none                   &none                   &none               &none                     &none  &none
                 
-                                                            &none  &kp LALT     &none  &none 
+                                                            &none  &none     &none  &none 
             >;
         };
         //Layer 3
         system_layer {
             display-name = "System";
             bindings = <
-                &to 0  &none        &none  &none  &none  &none                  &bt BT_SEL 0     &bt BT_PRV        &bt BT_NXT       &none  &none        &none
+                &to 0  &none        &none  &none  &none  &none                  &bt BT_SEL 0     &bt BT_PRV        &bt BT_NXT       &bt BT_CLR  &none        &none
                 
                 &none  &bootloader  &none  &none  &none  &none                  &rgb_ug RGB_TOG  &rgb_ug  RGB_BRI  &rgb_ug RGB_BRD  &none  &bootloader  &none
                           
