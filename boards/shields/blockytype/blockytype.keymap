@@ -37,6 +37,7 @@
     behaviors {
         #include "behaviors/alt_modifiers.keymap"
         #include "behaviors/shift_modifiers.keymap"
+        #include "behaviors/hold_tap.keymap"
         ht_tp: hold_tap_tap_preferred {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
@@ -59,9 +60,9 @@
         default_layer { 
             display-name = "Base";
             bindings = <
-                &mo 1  &kp DE_Q          &kp DE_W          &kp DE_F           &kp DE_P            &kp DE_B                                      &kp DE_J  &kp DE_L            &kp DE_U               &kp DE_Y               &s_DE_EXCL_DE_QMARK       &mo 1
+                &mo 1  &kp DE_Q          &kp DE_W          &kp DE_F           &kp DE_P            &kp DE_B                                      &kp DE_J  &kp DE_L            &a_DE_U_DE_U_UMLAUT               &kp DE_Y               &s_DE_EXCL_DE_QMARK       &mo 1
                     
-                &mo 2  &ht_tp LGUI DE_A  &ht_tp LALT DE_R  &ht_tp LCTRL S  &ht_tp LSHIFT DE_T  &kp DE_G                                      &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E      &ht_tp RALT DE_I       &ht_tp RGUI DE_O       &mo 2
+                &mo 2  &ht_tp_a_DE_A_DE_A_UMLAUT LGUI  &ht_tp LALT DE_R  &ht_tp_a_DE_S_DE_SHARP_S LCTRL  &ht_tp LSHIFT DE_T  &kp DE_G                                      &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E      &ht_tp RALT DE_I       &ht_tp_a_DE_O_DE_O_UMLAUT RGUI       &mo 2
                     
                 &mo 3  &kp DE_Z          &kp DE_X          &kp DE_C           &kp DE_D            &kp DE_V                                      &kp DE_K  &kp DE_H            &kp DE_COMMA           &kp DE_PERIOD          &kp DE_MINUS           &mo 3
                 
@@ -74,7 +75,7 @@
             bindings = <
                 &to 0  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT  &s_DE_PLUS_DE_GT  &kp TAB  &s_DE_DQT_DE_SQT                         &s_DE_LBRC_DE_RBRC  &s_DE_LPAR_DE_RPAR  &s_DE_LBKT_DE_RBKT  &s_DE_EQUAL_DE_TILDE  &none  &none
                     
-                &none  &ht_tp LGUI KP_N1  &ht_tp LALT KP_N2  &ht_tp LCTRL KP_N3  &ht_tp LSHIFT KP_N4  &kp KP_N5                     &kp KP_N6     &ht_tp RSHIFT KP_N7  &ht_tp RCTRL KP_N8  &ht_tp RALT KP_N9  &ht_tp RGUI KP_N0  &none
+                &none  &ht_tp LGUI KP_N1  &ht_tp_a_KP_N2_DE_SUPER2 LALT  &ht_tp_a_KP_N3_DE_SUPER3 LCTRL  &ht_tp LSHIFT KP_N4  &kp KP_N5                     &kp KP_N6     &ht_tp_s_KP_N7_LEFT_ARROW RSHIFT  &ht_tp_s_KP_N8_DOWN_ARROW RCTRL   &ht_tp_s_KP_N9_UP_ARROW RALT   &ht_tp_s_KP_N0_RIGHT_ARROW RGUI   &none
                     
                 &none  &s_DE_ACUTE_DE_GRAVE  &s_DE_AT_DE_SECTION  &kp DE_PERCENT  &kp ESC  &s_DE_AMPS_DE_CARET                         &s_DE_HASH_DE_DEG  &ht_tp K_PASTE DE_FSLH  &ht_tp K_COPY DE_BSLH  &ht_tp K_CUT DE_PIPE  &none        &none
                 
