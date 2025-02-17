@@ -150,3 +150,24 @@ s_KP_N2_DOWN_ARROW: s_KP_N2_DOWN_ARROW {
     bindings = <&kp KP_N2>, <&kp DOWN_ARROW>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
+/* ,  ¦  . */
+s_DE_COMMA_DE_PERIOD: s_DE_COMMA_DE_PERIOD {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_COMMA>, <&kp DE_PERIOD>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* +  ¦  * */
+s_DE_PLUS_DE_STAR: s_DE_PLUS_DE_STAR {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_PLUS>, <&kp DE_STAR>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* -  ¦  / */
+s_DE_MINUS_DE_FSLH: s_DE_MINUS_DE_FSLH {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp DE_MINUS>, <&kp DE_FSLH>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
