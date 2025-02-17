@@ -30,14 +30,14 @@ ht_tp_a_DE_O_DE_O_UMLAUT: ht_tp_a_DE_O_DE_O_UMLAUT {
     flavor = "tap-preferred";
     bindings = <&kp>, <&a_DE_O_DE_O_UMLAUT>;
 };
-/* 1  ¦  ² */
-ht_tp_a_KP_N1_DE_SUPER1: ht_tp_a_KP_N1_DE_SUPER1 {
+/* 2  ¦  ² */
+ht_tp_a_KP_N2_DE_SUPER2: ht_tp_a_KP_N2_DE_SUPER2 {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <1>;
     tapping-term-ms = <100>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
-    bindings = <&kp>, <&a_KP_N1_DE_SUPER1>;
+    bindings = <&kp>, <&a_KP_N2_DE_SUPER2>;
 };
 /* 3  ¦  ³ */
 ht_tp_a_KP_N3_DE_SUPER3: ht_tp_a_KP_N3_DE_SUPER3 {
