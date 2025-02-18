@@ -1,6 +1,6 @@
 /*
     keyoutput[default]  ¦  keyoutput[with modifer]
-    ht_tp_x[first char of modifier]_key[default]_key[in combination with modifer]: x[first char of modifier]_key[default]_key[in combination with modifer]
+    ht_tp_x[first char of modifier]_key[default]_key[in combination with modifer](_speciality for hold behavior): x[first char of modifier]_key[default]_key[in combination with modifer](_speciality for hold behavior)
 */
 
 /* A  ¦  Ä */
@@ -83,4 +83,13 @@ ht_tp_s_KP_N0_RIGHT_ARROW: ht_tp_s_KP_N0_RIGHT_ARROW {
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&s_KP_N0_RIGHT_ARROW>;
+};
+/* L2  ¦  End */
+ht_tp_a_to_2_END_to_layer: ht_tp_a_to_2_END_to_layer {
+    compatible = "zmk,behavior-hold-tap";
+    #binding-cells = <2>;
+    tapping-term-ms = <100>;
+    quick-tap-ms = <0>;
+    flavor = "tap-preferred";
+    bindings = <&to>, <&a_to_2_END>;
 };

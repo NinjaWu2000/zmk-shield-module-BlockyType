@@ -52,3 +52,10 @@ a_KP_N3_DE_SUPER3: a_KP_N3_DE_SUPER3 {
     bindings = <&kp KP_N3>, <&kp DE_SUPER3>;
     mods = <(MOD_LALT | MOD_RALT)>;
 };
+/* L2  ¦  End */
+a_to_2_END: a_to_2_END {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&to 2>, <&kp END>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
