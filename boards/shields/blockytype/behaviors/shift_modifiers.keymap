@@ -171,3 +171,24 @@ s_DE_MINUS_DE_FSLH: s_DE_MINUS_DE_FSLH {
     bindings = <&kp DE_MINUS>, <&kp DE_FSLH>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
+/* BRI  ¦  BRD */
+s_RGB_BRI_RGB_BRD: s_RGB_BRI_RGB_BRD {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* SAI  ¦  SAD */
+s_RGB_SAI_RGB_SAD: s_RGB_SAI_RGB_SAD {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* HUI  ¦  HUD */
+s_RGB_HUI_RGB_HUD: s_RGB_HUI_RGB_HUD {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
