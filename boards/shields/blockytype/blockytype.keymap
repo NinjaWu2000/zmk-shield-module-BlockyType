@@ -46,12 +46,6 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
         };
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&none>, <&to 3>;
-        };
     };
 
     keymap {
@@ -60,11 +54,11 @@
         default_layer { 
             display-name = "Base";
             bindings = <
-                &mo 1  &kp DE_Q                          &kp DE_W          &kp DE_F                          &kp DE_P            &kp DE_B                            &kp DE_J  &kp DE_L            &a_DE_U_DE_U_UMLAUT  &kp DE_Y          &s_DE_EXCL_DE_QMARK               &mo 4
+                &none  &kp DE_Q                          &kp DE_W          &kp DE_F                          &kp DE_P            &kp DE_B                            &kp DE_J  &kp DE_L            &a_DE_U_DE_U_UMLAUT  &kp DE_Y          &s_DE_EXCL_DE_QMARK               &none
                     
-                &mo 2  &ht_tp_a_DE_A_DE_A_UMLAUT LGUI X  &ht_tp LALT DE_R  &ht_tp_a_DE_S_DE_SHARP_S LCTRL X  &ht_tp LSHIFT DE_T  &kp DE_G                            &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E    &ht_tp RALT DE_I  &ht_tp_a_DE_O_DE_O_UMLAUT RGUI X  &mo 2
+                &none  &ht_tp_a_DE_A_DE_A_UMLAUT LGUI X  &ht_tp LALT DE_R  &ht_tp_a_DE_S_DE_SHARP_S LCTRL X  &ht_tp LSHIFT DE_T  &kp DE_G                            &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E    &ht_tp RALT DE_I  &ht_tp_a_DE_O_DE_O_UMLAUT RGUI X  &none
                     
-                &mo 3  &kp DE_Z                          &kp DE_X          &kp DE_C                          &kp DE_D            &kp DE_V                            &kp DE_K  &kp DE_H            &kp DE_COMMA         &kp DE_PERIOD     &kp DE_MINUS                      &mo 3
+                &none  &kp DE_Z                          &kp DE_X          &kp DE_C                          &kp DE_D            &kp DE_V                            &kp DE_K  &kp DE_H            &kp DE_COMMA         &kp DE_PERIOD     &kp DE_MINUS                      &none
                 
                                                                                                                                  &a_BSPC_DEL  &key_repeat     &to 1  &kp SPACE 
             >;
@@ -73,7 +67,7 @@
         symbol_layer { 
             display-name = "Symbol";
             bindings = <
-                &to 0  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT                 &s_DE_PLUS_DE_GT                  &kp TAB              &s_DE_DQT_DE_SQT                          &s_DE_LBRC_DE_RBRC  &s_DE_LPAR_DE_RPAR                  &s_DE_LBKT_DE_RBKT                 &s_DE_EQUAL_DE_TILDE            &ht_tp_a_to_2_END_to_layer 4 X     &none
+                &none  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT                 &s_DE_PLUS_DE_GT                  &kp TAB              &s_DE_DQT_DE_SQT                          &s_DE_LBRC_DE_RBRC  &s_DE_LPAR_DE_RPAR                  &s_DE_LBKT_DE_RBKT                 &s_DE_EQUAL_DE_TILDE            &ht_tp_a_to_2_END_to_layer 4 X     &none
                     
                 &none  &ht_tp LGUI KP_N1     &ht_tp_a_KP_N2_DE_SUPER2 LALT X  &ht_tp_a_KP_N3_DE_SUPER3 LCTRL X  &ht_tp LSHIFT KP_N4  &kp KP_N5                                 &kp KP_N6           &ht_tp_s_KP_N7_LEFT_ARROW RSHIFT X  &ht_tp_s_KP_N8_DOWN_ARROW RCTRL X  &ht_tp_s_KP_N9_UP_ARROW RALT X  &ht_tp_s_KP_N0_RIGHT_ARROW RGUI X  &none
                     
@@ -92,14 +86,14 @@
                 
                 &none  &none                &kp KP_N1            &s_KP_N2_DOWN_ARROW  &kp KP_N3             &s_DE_COMMA_DE_PERIOD                   &none  &none     &none          &none        &none    &none
                 
-                                                                                                            &kp LSHIFT             &none     &none  &kp RSHIFT 
+                                                                                                            &kp LSHIFT             &none     &to 0  &kp RSHIFT 
             >;
         };
         //Layer 3
         navigation_layer {
             display-name = "Navigation";
             bindings = <
-                &to 0  &none  &none     &none     &none     &none                   &none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &none
+                &none  &none  &none     &none     &none     &none                   &none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &none
                 
                 &none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none                   &none  &none     &none          &none        &none    &none
                 
@@ -112,11 +106,11 @@
         system_layer {
             display-name = "System";
             bindings = <
-                &to 0  &none        &none  &none  &none  &none                  &bt BT_SEL 0     &bt BT_PRV        &bt BT_NXT       &bt BT_CLR  &none        &none
+                &none  &none        &none  &none  &none  &none                  &bt BT_SEL 0     &bt BT_PRV        &bt BT_NXT       &bt BT_CLR  &none        &none
                 
-                &none  &bootloader  &none  &none  &none  &none                  &rgb_ug RGB_TOG  &rgb_ug  RGB_BRI  &rgb_ug RGB_BRD  &none  &bootloader  &none
+                &none  &bootloader  &none  &none  &none  &none                  &rgb_ug RGB_TOG  &rgb_ug  RGB_BRI  &rgb_ug RGB_BRD  &none       &bootloader  &none
                           
-                &none  &none        &none  &none  &none  &none                  &none            &none             &none            &none  &none        &none
+                &none  &none        &none  &none  &none  &none                  &none            &none             &none            &none       &none        &none
                 
                                                          &none  &none    &none  &none 
             >;
