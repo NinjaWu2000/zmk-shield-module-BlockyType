@@ -248,13 +248,13 @@ s_C_STOP_F5: s_C_STOP_F5 {
     bindings = <&kp C_STOP>, <&kp F5>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
-// /* PLAY/PAUSE  ¦  F6 */
-// s_C_PLAY_PAUSE_F6: s_C_PLAY_PAUSE_F6 {
-//     compatible = "zmk,behavior-mod-morph";
-//     #binding-cells = <0>;
-//     bindings = <&kp C_PLAY_PAUSE>, <&kp F6>;
-//     mods = <(MOD_LSFT | MOD_RSFT)>;
-// };
+/* PLAY/PAUSE  ¦  F6 */
+s_C_PLAY_PAUSE_F6: s_C_PLAY_PAUSE_F6 {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&kp C_PLAY_PAUSE>, <&kp F6>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
 // /* NEXT  ¦  F7 */
 // s_C_NEXT_F7: s_C_NEXT_F7 {
 //     compatible = "zmk,behavior-mod-morph";
