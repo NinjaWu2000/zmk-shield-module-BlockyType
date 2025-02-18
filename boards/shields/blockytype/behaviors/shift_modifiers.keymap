@@ -192,3 +192,31 @@ s_RGB_HUI_RGB_HUD: s_RGB_HUI_RGB_HUD {
     bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
+/* MOVE_LEFT  ¦  SCROLL LEFT */
+s_MOVE_LEFT_SCRL_LEFT: s_MOVE_LEFT_SCRL_LEFT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mmv MOVE_LEFT>, <&msc SCRL_LEFT>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* MOVE_DOWN  ¦  SCROLL DOWN */
+s_MOVE_DOWN_SCRL_DOWN: s_MOVE_DOWN_SCRL_DOWN {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mmv MOVE_DOWN>, <&msc SCRL_DOWN>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* MOVE_UP  ¦  SCROLL UP */
+s_MOVE_UP_SCRL_UP: s_MOVE_UP_SCRL_UP {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* MOVE_RIGHT  ¦  SCROLL RIGHT */
+s_MOVE_RIGHT_SCRL_RIGHT: s_MOVE_RIGHT_SCRL_RIGHT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mmv MOVE_RIGHT>, <&msc SCRL_RIGHT>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};

@@ -101,11 +101,11 @@
             bindings = <
                 &none  &none  &none     &none     &none     &none                   &none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &none
                 
-                &none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none                   &none  &none     &none          &none        &none    &none
+                &none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none                   &none  &s_MOVE_LEFT_SCRL_LEFT  &s_MOVE_DOWN_SCRL_DOWN  &s_MOVE_UP_SCRL_UP  &s_MOVE_RIGHT_SCRL_RIGHT  &none
                 
                 &none  &none  &none     &none     &none     &none                   &none  &none     &none          &none        &none    &none
                 
-                                                            &none  &none     &none  &none 
+                                                            &kp LSHIFT  &none     &none  &kp RSHIFT 
             >;
         };
         //Layer 4
@@ -118,7 +118,7 @@
                            
                 &none  &none  &none  &none  &none  &none                  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(240,100,100)  &rgb_ug RGB_COLOR_HSB(0,100,100)  &rgb_ug RGB_COLOR_HSB(30,100,100)  &none  &none
                 
-                                                         &none  &kp LSHIFT    &none  &none 
+                                                         &kp LSHIFT  &none    &none  &none 
             >;
         };
 
