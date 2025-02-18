@@ -266,6 +266,6 @@ s_C_NEXT_F7: s_C_NEXT_F7 {
 s_C_PREVIOUS_F8: s_C_PREVIOUS_F8 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
-    bindings = <&kp C_PREVIOUS>, <&kp F8>;
+    bindings = <&kp C_PREV>, <&kp F8>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 }
