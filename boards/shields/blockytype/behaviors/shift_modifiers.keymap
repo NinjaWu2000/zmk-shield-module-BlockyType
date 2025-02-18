@@ -263,7 +263,7 @@ s_C_NEXT_F7: s_C_NEXT_F7 {
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
 /* PREVIOUS  ¦  F8 */
-s_C_PREVIOUS_F8: s_C_PREVIOUS_F8 {
+s_F8: s_F8 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp A>, <&kp F8>;
