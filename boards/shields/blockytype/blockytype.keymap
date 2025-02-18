@@ -73,7 +73,7 @@
         symbol_layer { 
             display-name = "Symbol";
             bindings = <
-                &none  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT                 &s_DE_PLUS_DE_GT                  &kp TAB              &s_DE_DQT_DE_SQT                          &s_DE_LBRC_DE_RBRC  &s_DE_LPAR_DE_RPAR                  &s_DE_LBKT_DE_RBKT                 &s_DE_EQUAL_DE_TILDE            &ht_tp_a_to_2_END_to_layer 4 X     &none
+                &none  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT                 &s_DE_PLUS_DE_GT                  &kp TAB              &s_DE_DQT_DE_SQT                          &s_DE_LBRC_DE_RBRC  &a_s_DE_LPAR_DE_RPAR_HOME           &a_s_DE_LBKT_DE_RBKT_PAGE_DOWN     &a_s_DE_EQUAL_DE_TILDE_PAGE_UP  &ht_tp_a_to_2_END_to_layer 4 X     &none
                     
                 &none  &ht_tp LGUI KP_N1     &ht_tp_a_KP_N2_DE_SUPER2 LALT X  &ht_tp_a_KP_N3_DE_SUPER3 LCTRL X  &ht_tp LSHIFT KP_N4  &kp KP_N5                                 &kp KP_N6           &ht_tp_s_KP_N7_LEFT_ARROW RSHIFT X  &ht_tp_s_KP_N8_DOWN_ARROW RCTRL X  &ht_tp_s_KP_N9_UP_ARROW RALT X  &ht_tp_s_KP_N0_RIGHT_ARROW RGUI X  &none
                     
