@@ -85,7 +85,7 @@ ht_tp_s_KP_N0_RIGHT_ARROW: ht_tp_s_KP_N0_RIGHT_ARROW {
     bindings = <&kp>, <&s_KP_N0_RIGHT_ARROW>;
 };
 /* L2  ¦  End */
-ht_tp_a_to_2_END_to_layer: ht_tp_s_KP_N0_RIGHT_ARROW {
+ht_tp_a_to_2_END_to_layer: ht_tp_a_to_2_END_to_layer {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
     tapping-term-ms = <200>;
