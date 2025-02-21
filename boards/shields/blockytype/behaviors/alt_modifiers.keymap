@@ -80,3 +80,31 @@ a_s_DE_EQUAL_DE_TILDE_PAGE_UP: a_s_DE_EQUAL_DE_TILDE_PAGE_UP {
     bindings = <&s_DE_EQUAL_DE_TILDE>, <&kp PAGE_UP>;
     mods = <(MOD_LALT | MOD_RALT)>;
 };
+/* MOVE_LEFT  ¦  SCROLL LEFT */
+a_MOVE_LEFT_SCRL_LEFT: a_MOVE_LEFT_SCRL_LEFT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mmv MOVE_LEFT>, <&msc SCRL_LEFT>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
+/* MOVE_DOWN  ¦  SCROLL DOWN */
+a_MOVE_DOWN_SCRL_DOWN: a_MOVE_DOWN_SCRL_DOWN {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mmv MOVE_DOWN>, <&msc SCRL_DOWN>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
+/* MOVE_UP  ¦  SCROLL UP */
+a_MOVE_UP_SCRL_UP: a_MOVE_UP_SCRL_UP {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mmv MOVE_UP>, <&msc SCRL_UP>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
+/* MOVE_RIGHT  ¦  SCROLL RIGHT */
+a_MOVE_RIGHT_SCRL_RIGHT: a_MOVE_RIGHT_SCRL_RIGHT {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&mmv MOVE_RIGHT>, <&msc SCRL_RIGHT>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};

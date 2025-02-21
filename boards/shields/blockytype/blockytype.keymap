@@ -65,7 +65,7 @@
                     
                 &none  &ht_tp_a_DE_A_DE_A_UMLAUT LGUI X  &ht_tp LALT DE_R  &ht_tp_a_DE_S_DE_SHARP_S LCTRL X  &ht_tp LSHIFT DE_T  &kp DE_G                            &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E    &ht_tp RALT DE_I  &ht_tp_a_DE_O_DE_O_UMLAUT RGUI X  &none
                     
-                &none  &kp DE_Z                          &kp DE_X          &kp DE_C                          &kp DE_D            &kp DE_V                            &kp DE_K  &kp DE_H            &kp DE_COMMA         &kp DE_PERIOD     &kp DE_MINUS                      &to 4
+                &none  &kp DE_Z                          &kp DE_X          &kp DE_C                          &kp DE_D            &kp DE_V                            &kp DE_K  &kp DE_H            &kp DE_COMMA         &kp DE_PERIOD     &kp DE_MINUS                      &none
                 
                                                                                                                                  &a_BSPC_DEL  &key_repeat     &to 1  &kp SPACE 
             >;
@@ -78,7 +78,7 @@
                     
                 &none  &ht_tp LGUI KP_N1     &ht_tp_a_KP_N2_DE_SUPER2 LALT X  &ht_tp_a_KP_N3_DE_SUPER3 LCTRL X  &ht_tp LSHIFT KP_N4  &kp KP_N5                                 &kp KP_N6           &ht_tp_s_KP_N7_LEFT_ARROW RSHIFT X  &ht_tp_s_KP_N8_DOWN_ARROW RCTRL X  &ht_tp_s_KP_N9_UP_ARROW RALT X  &ht_tp_s_KP_N0_RIGHT_ARROW RGUI X  &none
                     
-                &none  &s_DE_ACUTE_DE_GRAVE  &s_DE_AT_DE_SECTION              &kp DE_PERCENT                    &kp ESC              &s_DE_AMPS_DE_CARET                       &s_DE_HASH_DE_DEG   &ht_tp K_PASTE DE_FSLH              &ht_tp K_COPY DE_BSLH              &ht_tp K_CUT DE_PIPE            &none                              &to 0
+                &none  &s_DE_ACUTE_DE_GRAVE  &s_DE_AT_DE_SECTION              &kp DE_PERCENT                    &kp ESC              &s_DE_AMPS_DE_CARET                       &s_DE_HASH_DE_DEG   &ht_tp K_PASTE DE_FSLH              &ht_tp K_COPY DE_BSLH              &ht_tp K_CUT DE_PIPE            &none                              &none
                 
                                                                                                                                      &kp LSHIFT           &kp ENTER     &to 0  &kp RSHIFT 
             >;
@@ -91,7 +91,7 @@
                 
                 &none  &s_DE_PLUS_DE_STAR   &s_KP_N4_LEFT_ARROW  &kp KP_N5            &s_KP_N6_RIGHT_ARROW  &kp KP_N0                               &s_C_STOP_F5  &s_C_PLAY_PAUSE_F6  &s_C_NEXT_F7  &s_C_PREVIOUS_F8  &none    &none
                 
-                &none  &none                &kp KP_N1            &s_KP_N2_DOWN_ARROW  &kp KP_N3             &s_DE_COMMA_DE_PERIOD                   &kp F9  &kp F10     &kp F11          &kp F12        &none    &to 0
+                &none  &none                &kp KP_N1            &s_KP_N2_DOWN_ARROW  &kp KP_N3             &s_DE_COMMA_DE_PERIOD                   &kp F9  &kp F10     &kp F11          &kp F12        &none    &none
                 
                                                                                                             &kp LSHIFT             &none     &to 0  &kp RSHIFT 
             >;
@@ -102,11 +102,11 @@
             bindings = <
                 &none  &none  &none     &none     &none     &none                   &none  &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP  &kp END  &none
                 
-                &none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none                   &none  &s_MOVE_LEFT_SCRL_LEFT  &s_MOVE_DOWN_SCRL_DOWN  &s_MOVE_UP_SCRL_UP  &s_MOVE_RIGHT_SCRL_RIGHT  &none
+                &none  &none  &mkp MB3  &mkp MB2  &mkp MB1  &none                   &none  &a_MOVE_LEFT_SCRL_LEFT  &a_MOVE_DOWN_SCRL_DOWN  &a_MOVE_UP_SCRL_UP  &a_MOVE_RIGHT_SCRL_RIGHT  &none
                 
-                &none  &none  &none     &none     &none     &none                   &none  &none     &none          &none        &none    &to 0
+                &none  &none  &none     &none     &none     &none                   &none  &none     &none          &none        &none    &none
                 
-                                                            &kp LSHIFT  &none     &none  &kp RSHIFT 
+                                                            &kp LALT  &none     &none  &kp RALT 
             >;
         };
         //Layer 4
@@ -117,7 +117,7 @@
                 
                 &none  &none  &none  &none  &none  &none                  &rgb_ug RGB_TOG  &s_RGB_BRI_RGB_BRD  &s_RGB_SAI_RGB_SAD  &s_RGB_HUI_RGB_HUD       &none  &none
                            
-                &none  &none  &none  &none  &none  &none                  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(240,100,100)  &rgb_ug RGB_COLOR_HSB(0,100,100)  &rgb_ug RGB_COLOR_HSB(30,100,100)  &none  &to 0
+                &none  &none  &none  &none  &none  &none                  &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_COLOR_HSB(240,100,100)  &rgb_ug RGB_COLOR_HSB(0,100,100)  &rgb_ug RGB_COLOR_HSB(30,100,100)  &none  &none
                 
                                                          &kp LSHIFT  &none    &none  &none 
             >;
