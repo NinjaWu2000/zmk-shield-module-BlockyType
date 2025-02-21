@@ -41,7 +41,7 @@
         ht_tp: hold_tap_tap_preferred {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
-                tapping-term-ms = <200>;
+                tapping-term-ms = <300>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -64,7 +64,7 @@
                     
                 &none  &ht_tp_a_DE_A_DE_A_UMLAUT LGUI X  &ht_tp LALT DE_R  &ht_tp_a_DE_S_DE_SHARP_S LCTRL X  &ht_tp LSHIFT DE_T  &kp DE_G                            &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E    &ht_tp RALT DE_I  &ht_tp_a_DE_O_DE_O_UMLAUT RGUI X  &none
                     
-                &none  &kp DE_Z                          &kp DE_X          &kp DE_C                          &kp DE_D            &kp DE_V                            &kp DE_K  &kp DE_H            &kp DE_COMMA         &kp DE_PERIOD     &kp DE_MINUS                      &none
+                &none  &kp DE_Z                          &kp DE_X          &kp DE_C                          &kp DE_D            &kp DE_V                            &kp DE_K  &kp DE_H            &kp DE_COMMA         &kp DE_PERIOD     &kp DE_MINUS                      &to 4
                 
                                                                                                                                  &a_BSPC_DEL  &key_repeat     &to 1  &kp SPACE 
             >;
