@@ -95,5 +95,44 @@ agr_to_2_END_modified: agr_to_2_END_modified {
     bindings = <&none>, <&kp END>;
     mods = <(MOD_LCTL | MOD_RCTL)>;
 };
+/* (  ¦  )  ¦  HOME */
+agr_s_DE_LPAR_DE_RPAR_HOME: agr_s_DE_LPAR_DE_RPAR_HOME {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&s_DE_LPAR_DE_RPAR>, <&agr_s_DE_LPAR_DE_RPAR_HOME_modified>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
+agr_s_DE_LPAR_DE_RPAR_HOME_modified: agr_s_DE_LPAR_DE_RPAR_HOME_modified {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&none>, <&kp HOME>;
+    mods = <(MOD_LCTL | MOD_RCTL)>;
+};
+/*  [  ¦  ] ¦  PAGE DOWN */
+agr_s_DE_LBKT_DE_RBKT_PAGE_DOWN: agr_s_DE_LBKT_DE_RBKT_PAGE_DOWN {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&s_DE_LBKT_DE_RBKT>, <&agr_s_DE_LBKT_DE_RBKT_PAGE_DOWN_modified>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
+agr_s_DE_LBKT_DE_RBKT_PAGE_DOWN_modified: agr_s_DE_LBKT_DE_RBKT_PAGE_DOWN_modified {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&none>, <&kp PAGE_DOWN>;
+    mods = <(MOD_LCTL | MOD_RCTL)>;
+};
+/*  =  ¦  ~ ¦  PAGE UP */
+agr_s_DE_EQUAL_DE_TILDE_PAGE_UP: agr_s_DE_EQUAL_DE_TILDE_PAGE_UP {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&s_DE_EQUAL_DE_TILDE>, <&agr_s_DE_EQUAL_DE_TILDE_PAGE_UP_modified>;
+    mods = <(MOD_LALT | MOD_RALT)>;
+};
+agr_s_DE_EQUAL_DE_TILDE_PAGE_UP_modified: agr_s_DE_EQUAL_DE_TILDE_PAGE_UP_modified {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&none>, <&kp PAGE_UP>;
+    mods = <(MOD_LCTL | MOD_RCTL)>;
+};
 
 
