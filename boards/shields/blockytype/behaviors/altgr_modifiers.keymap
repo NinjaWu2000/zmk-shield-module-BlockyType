@@ -10,7 +10,7 @@ agr_DE_U_DE_U_UMLAUT: agr_DE_U_DE_U_UMLAUT {
     #binding-cells = <0>;
     bindings = <&none>, <&kp DE_U_UMLAUT>;
     mods = <(MOD_LCTL | MOD_RCTL)>;
-}
+};
 agr_DE_U_DE_U_UMLAUT_default: agr_DE_U_DE_U_UMLAUT_default {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
