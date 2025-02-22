@@ -75,7 +75,7 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
-        paste: copy {
+        paste: paste {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
