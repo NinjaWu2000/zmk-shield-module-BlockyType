@@ -39,6 +39,7 @@
         #include "behaviors/alt_modifiers.keymap"
         #include "behaviors/shift_modifiers.keymap"
         #include "behaviors/hold_tap.keymap"
+        #include "behaviors/altgr_modifiers.keymap"
         ht_tp: hold_tap_tap_preferred {
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
@@ -61,9 +62,9 @@
         default_layer { 
             display-name = "Base";
             bindings = <
-                &none  &kp DE_Q                          &kp DE_W          &kp DE_F                          &kp DE_P            &kp DE_B                            &kp DE_J  &kp DE_L            &a_DE_U_DE_U_UMLAUT  &kp DE_Y          &s_DE_EXCL_DE_QMARK               &none
+                &none  &kp DE_Q                          &kp DE_W          &kp DE_F                          &kp DE_P            &kp DE_B                            &kp DE_J  &kp DE_L            &agr_DE_U_DE_U_UMLAUT  &kp DE_Y          &s_DE_EXCL_DE_QMARK               &none
                     
-                &none  &ht_tp_a_DE_A_DE_A_UMLAUT LGUI X  &ht_tp LALT DE_R  &ht_tp_a_DE_S_DE_SHARP_S LCTRL X  &ht_tp LSHIFT DE_T  &kp DE_G                            &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E    &ht_tp RALT DE_I  &ht_tp_a_DE_O_DE_O_UMLAUT RGUI X  &none
+                &none  &ht_tp_agr_DE_A_DE_A_UMLAUT LGUI X  &ht_tp LALT DE_R  &ht_tp_agr_DE_S_DE_SHARP_S LCTRL X  &ht_tp LSHIFT DE_T  &kp DE_G                            &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E    &ht_tp RALT DE_I  &ht_tp_agr_DE_O_DE_O_UMLAUT RGUI X  &none
                     
                 &none  &kp DE_Z                          &kp DE_X          &kp DE_C                          &kp DE_D            &kp DE_V                            &kp DE_K  &kp DE_H            &kp DE_COMMA         &kp DE_PERIOD     &kp DE_MINUS                      &none
                 
@@ -74,9 +75,9 @@
         symbol_layer { 
             display-name = "Symbol";
             bindings = <
-                &none  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT                 &s_DE_PLUS_DE_GT                  &kp TAB              &s_DE_DQT_DE_SQT                          &s_DE_LBRC_DE_RBRC  &a_s_DE_LPAR_DE_RPAR_HOME           &a_s_DE_LBKT_DE_RBKT_PAGE_DOWN     &a_s_DE_EQUAL_DE_TILDE_PAGE_UP  &ht_tp_a_to_2_END_to_layer 4 X     &none
+                &none  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT                 &s_DE_PLUS_DE_GT                  &kp TAB              &s_DE_DQT_DE_SQT                          &s_DE_LBRC_DE_RBRC  &agr_s_DE_LPAR_DE_RPAR_HOME           &agr_s_DE_LBKT_DE_RBKT_PAGE_DOWN     &agr_s_DE_EQUAL_DE_TILDE_PAGE_UP  &ht_tp_agr_to_2_END_to_layer 4 X     &none
                     
-                &none  &ht_tp LGUI KP_N1     &ht_tp_a_KP_N2_DE_SUPER2 LALT X  &ht_tp_a_KP_N3_DE_SUPER3 LCTRL X  &ht_tp LSHIFT KP_N4  &kp KP_N5                                 &kp KP_N6           &ht_tp_s_KP_N7_LEFT_ARROW RSHIFT X  &ht_tp_s_KP_N8_DOWN_ARROW RCTRL X  &ht_tp_s_KP_N9_UP_ARROW RALT X  &ht_tp_s_KP_N0_RIGHT_ARROW RGUI X  &none
+                &none  &ht_tp LGUI KP_N1     &ht_tp_agr_KP_N2_DE_SUPER2 LALT X  &ht_tp_agr_KP_N3_DE_SUPER3 LCTRL X  &ht_tp LSHIFT KP_N4  &kp KP_N5                                 &kp KP_N6           &ht_tp_s_KP_N7_LEFT_ARROW RSHIFT X  &ht_tp_s_KP_N8_DOWN_ARROW RCTRL X  &ht_tp_s_KP_N9_UP_ARROW RALT X  &ht_tp_s_KP_N0_RIGHT_ARROW RGUI X  &none
                     
                 &none  &s_DE_ACUTE_DE_GRAVE  &s_DE_AT_DE_SECTION              &kp DE_PERCENT                    &kp ESC              &s_DE_AMPS_DE_CARET                       &s_DE_HASH_DE_DEG   &ht_tp K_PASTE DE_FSLH              &ht_tp K_COPY DE_BSLH              &ht_tp K_CUT DE_PIPE            &none                              &none
                 
