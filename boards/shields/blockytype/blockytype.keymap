@@ -10,7 +10,9 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
-
+&key_repeat {
+    usage-pages = <HID_USAGE_KEY HID_USAGE_CONSUMER>;
+};
 
 / {
     // |00|01|02|03|04|05|         |06|07|08|09|10|11|
@@ -44,6 +46,14 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
                 tapping-term-ms = <200>;
+                quick-tap-ms = <0>;
+                flavor = "tap-preferred";
+                bindings = <&kp>, <&kp>;
+        };
+        ht_tp_l: hold_tap_tap_preferred_long {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                tapping-term-ms = <400>;
                 quick-tap-ms = <0>;
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
@@ -107,7 +117,7 @@
             bindings = <
                 &none  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT                 &s_DE_PLUS_DE_GT                  &kp TAB              &s_DE_DQT_DE_SQT                          &s_DE_LBRC_DE_RBRC  &agr_s_DE_LPAR_DE_RPAR_HOME           &agr_s_DE_LBKT_DE_RBKT_PAGE_DOWN     &agr_s_DE_EQUAL_DE_TILDE_PAGE_UP  &ht_tp_agr_to_2_END_to_layer 4 X     &none
                     
-                &none  &ht_tp LGUI KP_N1     &ht_tp_agr_KP_N2_DE_SUPER2 LALT X  &ht_tp_agr_KP_N3_DE_SUPER3 LCTRL X  &ht_tp LSHIFT KP_N4  &kp KP_N5                                 &kp KP_N6           &ht_tp_s_KP_N7_LEFT_ARROW RSHIFT X  &ht_tp_s_KP_N8_DOWN_ARROW RCTRL X  &ht_tp_s_KP_N9_UP_ARROW RALT X  &ht_tp_s_KP_N0_RIGHT_ARROW RGUI X  &none
+                &none  &ht_tp_l LGUI KP_N1     &ht_tp_agr_KP_N2_DE_SUPER2 LALT X  &ht_tp_agr_KP_N3_DE_SUPER3 LCTRL X  &ht_tp LSHIFT KP_N4  &kp KP_N5                                 &kp KP_N6           &ht_tp_s_KP_N7_LEFT_ARROW RSHIFT X  &ht_tp_s_KP_N8_DOWN_ARROW RCTRL X  &ht_tp_s_KP_N9_UP_ARROW RALT X  &ht_tp_s_KP_N0_RIGHT_ARROW RGUI X  &none
                     
                 &none  &s_DE_ACUTE_DE_GRAVE  &s_DE_AT_DE_SECTION              &kp DE_PERCENT                    &kp ESC              &s_DE_AMPS_DE_CARET                       &s_DE_HASH_DE_DEG   &ht_tp_h_paste X DE_FSLH             &ht_tp_h_copy X DE_BSLH               &ht_tp_h_cut X DE_PIPE           &none                              &none
                 

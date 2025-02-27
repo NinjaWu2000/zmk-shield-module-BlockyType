@@ -79,7 +79,7 @@ ht_tp_s_KP_N9_UP_ARROW: ht_tp_s_KP_N9_UP_ARROW {
 ht_tp_s_KP_N0_RIGHT_ARROW: ht_tp_s_KP_N0_RIGHT_ARROW {
     compatible = "zmk,behavior-hold-tap";
     #binding-cells = <2>;
-    tapping-term-ms = <200>;
+    tapping-term-ms = <400>;
     quick-tap-ms = <0>;
     flavor = "tap-preferred";
     bindings = <&kp>, <&s_KP_N0_RIGHT_ARROW>;
