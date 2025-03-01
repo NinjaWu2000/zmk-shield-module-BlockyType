@@ -213,6 +213,13 @@ s_C_VOL_DN_F3: s_K_VOL_DN_F3 {
     bindings = <&kp C_VOL_DN>, <&kp F3>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
+/* none  ¦  F4 */
+s_none_F4: s_none_F4 {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&none>, <&kp F4>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
 /* STOP  ¦  F5 */
 s_C_STOP_F5: s_C_STOP_F5 {
     compatible = "zmk,behavior-mod-morph";
@@ -239,5 +246,33 @@ s_C_PREVIOUS_F8: s_C_PREVIOUS_F8 {
     compatible = "zmk,behavior-mod-morph";
     #binding-cells = <0>;
     bindings = <&kp C_PREVIOUS>, <&kp F8>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* none  ¦  F9 */
+s_none_F9: s_none_F9 {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&none>, <&kp F9>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* none  ¦  F10 */
+s_none_F10: s_none_F10 {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&none>, <&kp F10>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* none  ¦  F11 */
+s_none_F11: s_none_F11 {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&none>, <&kp F11>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
+};
+/* none  ¦  F12 */
+s_none_F12: s_none_F12 {
+    compatible = "zmk,behavior-mod-morph";
+    #binding-cells = <0>;
+    bindings = <&none>, <&kp F12>;
     mods = <(MOD_LSFT | MOD_RSFT)>;
 };
