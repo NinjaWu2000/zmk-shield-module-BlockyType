@@ -94,12 +94,18 @@
                 flavor = "tap-preferred";
                 bindings = <&kp>, <&kp>;
         };
-        tdb: tap_dance_bootloader {
+        td_b: tap_dance_bootloader {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&none>, <&bootloader>;
         };
+        td_l2_l4: tap_dance_layer_2_layer_4{
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&to 2>, <&to 4>;
+        }
     };
 
     macros {
@@ -151,7 +157,7 @@
         symbol_layer { 
             display-name = "Symbol";
             bindings = <
-                &none  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT                 &s_DE_PLUS_DE_GT                  &kp TAB              &s_DE_DQT_DE_SQT                          &s_DE_LBRC_DE_RBRC  &agr_s_DE_LPAR_DE_RPAR_HOME           &agr_s_DE_LBKT_DE_RBKT_PAGE_DOWN     &agr_s_DE_EQUAL_DE_TILDE_PAGE_UP  &ht_tp_agr_to_2_END_to_layer 4 X     &none
+            &none  &s_DE_DOLLAR_DE_EURO  &s_DE_STAR_DE_LT                 &s_DE_PLUS_DE_GT                  &kp TAB              &s_DE_DQT_DE_SQT                          &s_DE_LBRC_DE_RBRC  &ht_tp HOME s_DE_LPAR_DE_RPA           &ht_tp PAGE_DOWN s_DE_LBKT_DE_RBKT     &ht_tp PAGE_UP s_DE_EQUAL_DE_TILDE  &ht_tp END td_l2_l4     &none
                     
                 &none  &ht_tp_l LGUI KP_N1     &ht_tp LALT KP_N2  &ht_tp LCTRL KP_N3  &ht_tp LSHIFT KP_N4  &kp KP_N5                                 &kp KP_N6           &ht_tp_s_KP_N7_LEFT_ARROW RSHIFT X  &ht_tp_s_KP_N8_DOWN_ARROW RCTRL X  &ht_tp_s_KP_N9_UP_ARROW RALT X  &ht_tp_s_KP_N0_RIGHT_ARROW RGUI X  &none
                     
@@ -191,7 +197,7 @@
         system_layer {
             display-name = "System";
             bindings = <
-                &none  &tdb   &none  &none  &none  &none                  &bt BT_SEL 0     &bt BT_PRV        &bt BT_NXT       &bt BT_CLR  &tdb   &none
+                &none  &td_b   &none  &none  &none  &none                  &bt BT_SEL 0     &bt BT_PRV        &bt BT_NXT       &bt BT_CLR  &td_b   &none
                 
                 &none  &none  &none  &none  &none  &none                  &rgb_ug RGB_TOG  &s_RGB_BRI_RGB_BRD  &s_RGB_SAI_RGB_SAD  &s_RGB_HUI_RGB_HUD       &none  &none
                            
