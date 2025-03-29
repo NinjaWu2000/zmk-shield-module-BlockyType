@@ -3,33 +3,8 @@
     ht_tp_x[first char of modifier]_key[default]_key[in combination with modifer](_speciality for hold behavior): x[first char of modifier]_key[default]_key[in combination with modifer](_speciality for hold behavior)
 */
 
-/* A  ¦  Ä */
-ht_tp_agr_DE_A_DE_A_UMLAUT: ht_tp_agr_DE_A_DE_A_UMLAUT {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <400>;
-    quick-tap-ms = <0>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&agr_DE_A_DE_A_UMLAUT>;
-};
-/* S  ¦  ß */
-ht_tp_agr_DE_S_DE_SHARP_S: ht_tp_agr_DE_S_DE_SHARP_S {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
-    quick-tap-ms = <0>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&agr_DE_S_DE_SHARP_S>;
-};
-/* O  ¦  Ö */
-ht_tp_agr_DE_O_DE_O_UMLAUT: ht_tp_agr_DE_O_DE_O_UMLAUT {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <400>;
-    quick-tap-ms = <0>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&agr_DE_O_DE_O_UMLAUT>;
-};
+
+
 /* 2  ¦  ² */
 ht_tp_agr_KP_N2_DE_SUPER2: ht_tp_agr_KP_N2_DE_SUPER2 {
     compatible = "zmk,behavior-hold-tap";

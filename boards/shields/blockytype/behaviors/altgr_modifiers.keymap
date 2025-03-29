@@ -4,58 +4,9 @@
     agr[for alt gr (ctrl + alt)]_key[default]_key[in combination with modifer]_modified: agr[for alt gr (ctrl + alt)]_key[default]_key[in combination with modifer]_modified
 */
 
-/* U  ¦  Ü */
-agr_DE_U_DE_U_UMLAUT: agr_DE_U_DE_U_UMLAUT {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp DE_U>, <&agr_DE_U_DE_U_UMLAUT_modified>;
-    mods = <(MOD_LALT | MOD_RALT)>;
-};
-agr_DE_U_DE_U_UMLAUT_modified: agr_DE_U_DE_U_UMLAUT_modified {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&none>, <&kp DE_U_UMLAUT>;
-    mods = <(MOD_LCTL | MOD_RCTL)>;
-};
-/* A  ¦  Ä */
-agr_DE_A_DE_A_UMLAUT: agr_DE_A_DE_A_UMLAUT {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp DE_A>, <&agr_DE_A_DE_A_UMLAUT_modified>;
-    mods = <(MOD_LALT | MOD_RALT)>;
-};
-agr_DE_A_DE_A_UMLAUT_modified: agr_DE_A_DE_A_UMLAUT_modified {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&none>, <&kp DE_A_UMLAUT>;
-    mods = <(MOD_LCTL | MOD_RCTL)>;
-};
-/* S  ¦  ß */
-agr_DE_S_DE_SHARP_S: agr_DE_S_DE_SHARP_S {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp DE_S>, <&agr_DE_S_DE_SHARP_S_modified>;
-    mods = <(MOD_LALT | MOD_RALT)>;
-};
-agr_DE_S_DE_SHARP_S_modified: agr_DE_S_DE_SHARP_S_modified {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&none>, <&kp DE_SHARP_S>;
-    mods = <(MOD_LCTL | MOD_RCTL)>;
-};
-/* O  ¦  Ö */
-agr_DE_O_DE_O_UMLAUT: agr_DE_O_DE_O_UMLAUT {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&kp DE_O>, <&agr_DE_O_DE_O_UMLAUT_modified>;
-    mods = <(MOD_LALT | MOD_RALT)>;
-};
-agr_DE_O_DE_O_UMLAUT_modified: agr_DE_O_DE_O_UMLAUT_modified {
-    compatible = "zmk,behavior-mod-morph";
-    #binding-cells = <0>;
-    bindings = <&none>, <&kp DE_O_UMLAUT>;
-    mods = <(MOD_LCTL | MOD_RCTL)>;
-};
+
+
+
 /* 2  ¦  ² */
 agr_KP_N2_DE_SUPER2: agr_KP_N2_DE_SUPER2 {
     compatible = "zmk,behavior-mod-morph";
