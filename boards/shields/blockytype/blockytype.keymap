@@ -34,6 +34,30 @@
             key-positions = <36 39>;
             layers = <0 1 2 3 4>;
         };
+        combo_DE_A_UMLAUT {
+            timeout-ms = <50>;
+            bindings = <&kp DE_A_UMLAUT>;
+            key-positions = <13 20>;    // a + e
+            layers = <0>;
+        };
+        combo_DE_O_UMLAUT {
+            timeout-ms = <50>;
+            bindings = <&kp DE_O_UMLAUT>;
+            key-positions = <22 20>;    // o + e
+            layers = <0>;
+        };
+        combo_DE_U_UMLAUT {
+            timeout-ms = <50>;
+            bindings = <&kp DE_U_UMLAUT>;
+            key-positions = <08 20>;    // u + e
+            layers = <0>;
+        };
+        combo_DE_SHARP_S {
+            timeout-ms = <50>;
+            bindings = <&kp DE_SHARP_S>;
+            key-positions = <15 20>;    // s + e
+            layers = <0>;
+        };
     };
 
 
@@ -102,9 +126,9 @@
         default_layer { 
             display-name = "Base";
             bindings = <
-                &none  &kp DE_Q                          &kp DE_W          &kp DE_F                          &kp DE_P            &kp DE_B                            &kp DE_J  &kp DE_L            &agr_DE_U_DE_U_UMLAUT  &kp DE_Y          &s_DE_EXCL_DE_QMARK               &none
+                &none  &kp DE_Q                          &kp DE_W          &kp DE_F                          &kp DE_P            &kp DE_B                            &kp DE_J  &kp DE_L            &kp DE_U  &kp DE_Y          &s_DE_EXCL_DE_QMARK               &none
                     
-                &none  &ht_tp_agr_DE_A_DE_A_UMLAUT LGUI X  &ht_tp LALT DE_R  &ht_tp_agr_DE_S_DE_SHARP_S LCTRL X  &ht_tp LSHIFT DE_T  &kp DE_G                            &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E    &ht_tp RALT DE_I  &ht_tp_agr_DE_O_DE_O_UMLAUT RGUI X  &none
+                &none  &ht_tp LGUI DE_A  &ht_tp LALT DE_R  &ht_tp LCTRL DE_S  &ht_tp LSHIFT DE_T  &kp DE_G                            &kp DE_M  &ht_tp RSHIFT DE_N  &ht_tp RCTRL DE_E    &ht_tp RALT DE_I  &ht_tp RGUI DE_O  &none
                     
                 &none  &kp DE_Z                          &kp DE_X          &kp DE_C                          &kp DE_D            &kp DE_V                            &kp DE_K  &kp DE_H            &kp DE_COMMA         &kp DE_PERIOD     &kp DE_MINUS                      &none
                 
@@ -128,7 +152,8 @@
         function_layer {
             display-name = "Function";
             bindings = <
-                &none  &s_DE_MINUS_DE_FSLH  &kp KP_N7            &s_KP_N8_UP_ARROW    &kp KP_N9             &kp ENTER                               &s_C_MUTE_F1  &s_C_VOL_UP_F2  &s_C_VOL_DN_F3  &s_none_F4  &none  &none
+                &none  &s_DE_MINUS_DE_FSLH  &kp KP_N7            &s_KP_N8_UP_ARROW    &kp KP_N9             &kp ENTER                               &s_C_MUTE_F1  &s_C_VOL_UP_F2  &s_C_VOL_DN_F3  &s_none_F 
+                  &none  &none
                 
                 &none  &s_DE_PLUS_DE_STAR   &s_KP_N4_LEFT_ARROW  &kp KP_N5            &s_KP_N6_RIGHT_ARROW  &kp KP_N0                               &s_C_STOP_F5  &s_C_PLAY_PAUSE_F6  &s_C_NEXT_F7  &s_C_PREVIOUS_F8  &none    &none
                 
