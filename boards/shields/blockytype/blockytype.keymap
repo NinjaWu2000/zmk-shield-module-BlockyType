@@ -100,12 +100,12 @@
             tapping-term-ms = <200>;
             bindings = <&none>, <&bootloader>;
         };
-        td_l2_l4: tap_dance_layer_2_layer_4 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&to 2>, <&to 4>;
-        };
+        // td_l2_l4: tap_dance_layer_2_layer_4 {
+        //     compatible = "zmk,behavior-tap-dance";
+        //     #binding-cells = <0>;
+        //     tapping-term-ms = <200>;
+        //     bindings = <&to 2>, <&to 4>;
+        // };
     };
 
     macros {
