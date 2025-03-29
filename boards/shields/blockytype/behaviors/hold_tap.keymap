@@ -3,26 +3,6 @@
     ht_tp_x[first char of modifier]_key[default]_key[in combination with modifer](_speciality for hold behavior): x[first char of modifier]_key[default]_key[in combination with modifer](_speciality for hold behavior)
 */
 
-
-
-/* 2  ¦  ² */
-ht_tp_agr_KP_N2_DE_SUPER2: ht_tp_agr_KP_N2_DE_SUPER2 {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
-    quick-tap-ms = <0>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&agr_KP_N2_DE_SUPER2>;
-};
-/* 3  ¦  ³ */
-ht_tp_agr_KP_N3_DE_SUPER3: ht_tp_agr_KP_N3_DE_SUPER3 {
-    compatible = "zmk,behavior-hold-tap";
-    #binding-cells = <2>;
-    tapping-term-ms = <200>;
-    quick-tap-ms = <0>;
-    flavor = "tap-preferred";
-    bindings = <&kp>, <&agr_KP_N3_DE_SUPER3>;
-};
 /* 7  ¦  ⬅ */
 ht_tp_s_KP_N7_LEFT_ARROW: ht_tp_s_KP_N7_LEFT_ARROW {
     compatible = "zmk,behavior-hold-tap";
