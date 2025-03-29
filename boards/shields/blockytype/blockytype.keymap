@@ -49,7 +49,7 @@
         combo_DE_U_UMLAUT {
             timeout-ms = <50>;
             bindings = <&kp DE_U_UMLAUT>;
-            key-positions = <08 20>;    // u + e
+            key-positions = <8 20>;    // u + e
             layers = <0>;
         };
         combo_DE_SHARP_S {
